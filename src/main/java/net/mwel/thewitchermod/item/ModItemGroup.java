@@ -9,7 +9,7 @@ public class ModItemGroup{
 
     public static final ItemGroup THE_WITCHER = FabricItemGroupBuilder.create(
                     new Identifier("thewitchermod", "general"))
-            .icon(() -> new ItemStack(ModItems.amber)).appendItems(itemStacks -> {
+            .icon(() -> new ItemStack(ModItems.amethyst)).appendItems(itemStacks -> {
                 itemStacks.add(new ItemStack(ModItems.alchemists_powder));
                 itemStacks.add(new ItemStack(ModItems.alchemy_paste));
                 itemStacks.add(new ItemStack(ModItems.alghoul_bone_marrow));
