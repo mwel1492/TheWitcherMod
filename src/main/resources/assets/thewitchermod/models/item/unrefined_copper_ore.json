@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thewitchermod:item/unrefined_copper_ore"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thewitchermod:item/slyzard_scale_plate"
+  }
+}

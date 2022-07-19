@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thewitchermod:item/elven_armorers_tools"
+  }
+}
