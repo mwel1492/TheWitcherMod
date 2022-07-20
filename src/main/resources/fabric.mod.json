@@ -22,7 +22,7 @@
       "net.mwel.thewitchermod.TheWitcherMod"
     ],
     "client": [
-      "net.mwel.thewitchermod.TheWitcherModClient"
+      "net.mwel.thewitchermod.client.TheWitcherModClient"
     ]
   },
   "mixins": [

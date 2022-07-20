@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "thewitchermod:item/essence_of_"
+    "layer0": "thewitchermod:item/essence_of_wraith"
   }
 }

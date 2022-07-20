@@ -14,7 +14,7 @@ public class RelicItem extends Item{
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-        tooltip.add(Text.translatable("tooltip.thewitchermod.rareitem").formatted(Formatting.BLUE));
+        tooltip.add(Text.translatable("tooltip.thewitchermod.relicitem").formatted(Formatting.GOLD));
     }
 }
 

@@ -5,6 +5,7 @@ import net.mwel.thewitchermod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 public class TheWitcherMod implements ModInitializer {
 
 	public static final String MOD_ID = "thewitchermod";
@@ -12,7 +13,6 @@ public class TheWitcherMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		ModItems.RegisterModItems();
 	}
 }
