@@ -37,5 +37,20 @@
   },
   "suggests": {
     "another-mod": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/jEGF5fb"
+      },
+      "badges": [],
+      "parent": {
+        "id": "example-api",
+        "name": "Example API",
+        "description": "Modular example library",
+        "icon": "assets/thewitchermod/icon.png",
+        "badges": [ "library" ]
+      }
+    }
   }
 }

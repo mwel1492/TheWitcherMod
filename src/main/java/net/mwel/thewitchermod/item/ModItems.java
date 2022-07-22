@@ -1,34 +1,31 @@
 package net.mwel.thewitchermod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.mwel.thewitchermod.TheWitcherMod;
+import net.mwel.thewitchermod.block.ModBlocks;
+import net.mwel.thewitchermod.item.type.AliasedCommonModBlockItem;
 import net.mwel.thewitchermod.item.type.*;
-
-
 
 
 public class ModItems{
 
-
 /*    Items used in Vanilla as well */
-//    public static final Item coal = registerItem("coal", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item copper_ingot = registerItem("copper_ingot", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item copper_ore = registerItem("copper_ore", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item diamond = registerItem("diamond", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item emerald = registerItem("emerald", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item gold_nugget = registerItem("gold_nugget", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item gold_ore = registerItem("gold_ore", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item iron_ingot = registerItem("iron_ingot", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item iron_ore = registerItem("iron_ore", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item feather = registerItem("feather", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item empty_bottle = registerItem("empty_bottle", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item coal = registerItem("coal", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item copper_ingot = registerItem("copper_ingot", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item copper_ore = registerItem("copper_ore", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item diamond = registerItem("diamond", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item emerald = registerItem("emerald", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item gold_nugget = registerItem("gold_nugget", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item gold_ore = registerItem("gold_ore", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item iron_ingot = registerItem("iron_ingot", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item iron_ore = registerItem("iron_ore", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item feather = registerItem("feather", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item empty_bottle = registerItem("empty_bottle", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
 
-    
-//    public static final Item lesser_runestone = registerItem("lesser_runestone", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-//    public static final Item lesser_infusion_glyph = registerItem("lesser_infusion_glyph", new Item(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+
 
 
 
@@ -62,8 +59,8 @@ public class ModItems{
     public static final Item dwarven_whetstone = registerItem("dwarven_whetstone", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item dye = registerItem("dye", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item dye_solution = registerItem("dye_solution", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item elven_armorers_tools = registerItem("elven_armorers_tools", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item elven_whetstone = registerItem("elven_whetstone", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item elven_armorers_tools = registerItem("elven_armorers_tools", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item elven_whetstone = registerItem("elven_whetstone", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item emerald_dust = registerItem("emerald_dust", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item endrega_armor_plate = registerItem("endrega_armor_plate", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item enriched_dimeritium_ingot = registerItem("enriched_dimeritium_ingot", new RelicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
@@ -94,6 +91,8 @@ public class ModItems{
     public static final Item infused_slyzard_hide = registerItem("infused_slyzard_hide", new RelicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item leather_scraps = registerItem("leather_scraps", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item leather_straps = registerItem("leather_straps", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item lesser_infusion_glyph = registerItem("lesser_infusion_glyph", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item lesser_runestone = registerItem("lesser_runestone", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item linen = registerItem("linen", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item malachite = registerItem("malachite", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item meteorite_ingot = registerItem("meteorite_ingot", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
@@ -122,6 +121,15 @@ public class ModItems{
     public static final Item monster_tooth = registerItem("monster_tooth", new RelicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item monster_vine = registerItem("monster_vine", new RelicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item monster_wing = registerItem("monster_wing", new RelicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item mutagen_blue = registerItem("mutagen_blue", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item mutagen_blue_greater = registerItem("mutagen_blue_greater", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item mutagen_blue_lesser = registerItem("mutagen_blue_lesser", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item mutagen_green = registerItem("mutagen_green", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item mutagen_green_greater = registerItem("mutagen_green_greater", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item mutagen_green_lesser = registerItem("mutagen_green_lesser", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item mutagen_red = registerItem("mutagen_red", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item mutagen_red_greater = registerItem("mutagen_red_greater", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item mutagen_red_lesser = registerItem("mutagen_red_lesser", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item nails = registerItem("nails", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item nickel_ore = registerItem("nickel_ore", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item oil = registerItem("oil", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
@@ -193,7 +201,7 @@ public class ModItems{
     public static final Item cockatrice_egg = registerItem("cockatrice_egg", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item cockatrice_stomach = registerItem("cockatrice_stomach", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item cortinarius = registerItem("cortinarius", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item crows_eye = registerItem("crows_eye", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item crows_eye = registerItem("crows_eye",new AliasedCommonModBlockItem(ModBlocks.crows_eye_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item crystalized_essence = registerItem("crystalized_essence", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item cyclops_eye = registerItem("cyclops_eye", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item dark_essence = registerItem("dark_essence", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
@@ -208,7 +216,7 @@ public class ModItems{
     public static final Item endrega_embryo = registerItem("endrega_embryo", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item endrega_heart = registerItem("endrega_heart", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item ergot_seeds = registerItem("ergot_seeds", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item erynia_eye = registerItem("erynia_eye", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item erynia_eye = registerItem("erynia_eye", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item essence_of_wraith = registerItem("essence_of_wraith", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item fiends_eye = registerItem("fiends_eye", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item fifth_essence = registerItem("fifth_essence", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
@@ -274,7 +282,7 @@ public class ModItems{
     public static final Item shaelmaar_dust = registerItem("shaelmaar_dust", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item shaelmaar_hair = registerItem("shaelmaar_hair", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item slyzard_scale_plate = registerItem("slyzard_scale_plate", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item specter_dust = registerItem("specter_dust", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item specter_dust = registerItem("specter_dust", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item stammelfords_dust = registerItem("stammelfords_dust", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item sulfur = registerItem("sulfur", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item troll_hide = registerItem("troll_hide", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
@@ -304,7 +312,7 @@ public class ModItems{
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(TheWitcherMod.MOD_ID, name), item);
     }
-    public static void RegisterModItems(){
+    public static void registerModItems(){
         TheWitcherMod.LOGGER.debug("Registering Mod Items" + TheWitcherMod.MOD_ID);
     }
 }

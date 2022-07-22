@@ -1,0 +1,6 @@
+{
+  "parent": "thewitchermod:block/crop3",
+  "textures": {
+    "crop": "thewitchermod:block/sweet_berry_bush_stage3"
+  }
+}

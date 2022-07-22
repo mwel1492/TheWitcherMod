@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.mwel.thewitchermod.block.ModBlocks;
 
 public class ModItemGroup{
 
@@ -72,6 +73,8 @@ public class ModItemGroup{
                 stacks.add(new ItemStack(ModItems.infused_slyzard_hide));
                 stacks.add(new ItemStack(ModItems.leather_scraps));
                 stacks.add(new ItemStack(ModItems.leather_straps));
+                stacks.add(new ItemStack(ModItems.lesser_infusion_glyph));
+                stacks.add(new ItemStack(ModItems.lesser_runestone));
                 stacks.add(new ItemStack(ModItems.linen));
                 stacks.add(new ItemStack(ModItems.malachite));
                 stacks.add(new ItemStack(ModItems.meteorite_ingot));
@@ -100,6 +103,15 @@ public class ModItemGroup{
                 stacks.add(new ItemStack(ModItems.monster_tooth));
                 stacks.add(new ItemStack(ModItems.monster_vine));
                 stacks.add(new ItemStack(ModItems.monster_wing));
+                stacks.add(new ItemStack(ModItems.mutagen_blue_lesser));
+                stacks.add(new ItemStack(ModItems.mutagen_blue));
+                stacks.add(new ItemStack(ModItems.mutagen_blue_greater));
+                stacks.add(new ItemStack(ModItems.mutagen_green_lesser));
+                stacks.add(new ItemStack(ModItems.mutagen_green));
+                stacks.add(new ItemStack(ModItems.mutagen_green_greater));
+                stacks.add(new ItemStack(ModItems.mutagen_red_lesser));
+                stacks.add(new ItemStack(ModItems.mutagen_red));
+                stacks.add(new ItemStack(ModItems.mutagen_red_greater));
                 stacks.add(new ItemStack(ModItems.nails));
                 stacks.add(new ItemStack(ModItems.nickel_ore));
                 stacks.add(new ItemStack(ModItems.oil));
@@ -281,6 +293,8 @@ public class ModItemGroup{
                 stacks.add(new ItemStack(ModItems.wolfsbane));
                 stacks.add(new ItemStack(ModItems.wyvern_egg));
                 stacks.add(new ItemStack(ModItems.wyvern_hide));
+
+                stacks.add(new ItemStack(ModBlocks.crows_eye_bush));
 //                stacks.add(new ItemStack(ModItems.mutagen_blue));
 //                stacks.add(new ItemStack(ModItems.mutagen_blue_greater));
 //                stacks.add(new ItemStack(ModItems.mutagen_blue_lesser));

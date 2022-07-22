@@ -1,6 +1,7 @@
 package net.mwel.thewitchermod;
 
 import net.fabricmc.api.ModInitializer;
+import net.mwel.thewitchermod.block.ModBlocks;
 import net.mwel.thewitchermod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,7 @@ public class TheWitcherMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItems.RegisterModItems();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
