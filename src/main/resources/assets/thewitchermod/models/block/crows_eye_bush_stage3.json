@@ -1,5 +1,5 @@
 {
-  "parent": "thewitchermod:block/crop3",
+  "parent": "thewitchermod:block/large_shape",
   "textures": {
     "crop": "thewitchermod:block/sweet_berry_bush_stage3"
   }
