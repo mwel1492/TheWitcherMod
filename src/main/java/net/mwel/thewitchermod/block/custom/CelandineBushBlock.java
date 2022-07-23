@@ -80,7 +80,7 @@ public class CelandineBushBlock extends PlantBlock {
         int i = state.get(AGE);
         boolean bl2 = bl = i == 3;
         if (i > 2) {
-            int j = world.random.nextBetween(2,4);
+            int j = world.random.nextBetween(1,3);
             CelandineBushBlock.dropStack(world, pos, new ItemStack(ModItems.celandine, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
             BlockState blockState = state.with(AGE, 0);

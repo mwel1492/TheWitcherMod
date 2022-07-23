@@ -44,9 +44,9 @@ public class CrowsEyeCropBlock extends CropBlock {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 5;
+
+        boolean bl = i == 5;
         if (!bl && player.getStackInHand(hand).isOf(Items.BONE_MEAL)) {
             return ActionResult.PASS;
         }
@@ -70,7 +70,7 @@ public class CrowsEyeCropBlock extends CropBlock {
 
     @Override
     public int getMaxAge() {
-        return 3;
+        return 5;
     }
 
     @Override

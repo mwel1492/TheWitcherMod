@@ -17,7 +17,6 @@ import net.mwel.thewitchermod.item.ModItemGroup;
 public class ModBlocks {
 
     // Flower Blocks
-
     public static final Block arenaria_flower = registerBlock("arenaria_flower", new FlowerBlock(StatusEffects.BLINDNESS, 12, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque().sounds(BlockSoundGroup.GRASS)), ModItemGroup.THE_WITCHER);
 
 

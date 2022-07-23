@@ -294,6 +294,7 @@ public class ModItemGroup{
                 stacks.add(new ItemStack(ModItems.wyvern_egg));
                 stacks.add(new ItemStack(ModItems.wyvern_hide));
 
+//              Регистрация блока в Закладке мода
                 stacks.add(new ItemStack(ModBlocks.crows_eye_bush));
                 stacks.add(new ItemStack(ModBlocks.celandine_bush));
 

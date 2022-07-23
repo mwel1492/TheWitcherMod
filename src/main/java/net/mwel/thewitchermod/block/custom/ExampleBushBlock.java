@@ -1,6 +1,9 @@
 package net.mwel.thewitchermod.block.custom;
 
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.PlantBlock;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -26,17 +29,19 @@ import net.minecraft.world.event.GameEvent;
 import net.mwel.thewitchermod.block.ModBlocks;
 import net.mwel.thewitchermod.item.ModItems;
 
-public class CrowsEyeBushBlock extends PlantBlock {
-    public CrowsEyeBushBlock(Settings settings) {
+public class ExampleBushBlock extends PlantBlock {
+    public ExampleBushBlock(Settings settings) {
         super(settings);
         this.setDefaultState((this.stateManager.getDefaultState()).with(AGE, 0));
     }
-
+// Максимальная стадия Роста
     public static final IntProperty AGE = Properties.AGE_3;
     private static final VoxelShape SMALL_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 8.0, 14.0);
     private static final VoxelShape MEDIUM_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 16.0, 14.0);
     private static final VoxelShape LARGE_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 24.0, 14.0);
 
+
+//    Хитбоксы на разные стадии Роста
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         if (state.get(AGE) == 0) {
@@ -51,8 +56,11 @@ public class CrowsEyeBushBlock extends PlantBlock {
         return super.getOutlineShape(state, world, pos, context);
     }
 
+
+
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
+        //                      Что ты возьмешь на СКМ
         return new ItemStack(ModBlocks.crows_eye_bush);
     }
 
@@ -71,30 +79,40 @@ public class CrowsEyeBushBlock extends PlantBlock {
         }
     }
 
+
+//    Дамаг от блока и замедление
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (!(entity instanceof LivingEntity) || entity.getType() == EntityType.FOX || entity.getType() == EntityType.BEE) {
             return;
         }
+//        Замедление
         entity.slowMovement(state, new Vec3d(0.8f, 0.75, 0.8f));
         if (!(world.isClient || state.get(AGE) <= 0 || entity.lastRenderX == entity.getX() && entity.lastRenderZ == entity.getZ())) {
             double d = Math.abs(entity.getX() - entity.lastRenderX);
             double e = Math.abs(entity.getZ() - entity.lastRenderZ);
             if (d >= (double)0.003f || e >= (double)0.003f) {
+//                                                 Дамаг от блока
                 entity.damage(DamageSource.GENERIC, 0.5f);
             }
         }
     }
 
+//    Заменяет дроп предмета с блока
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 3;
+//        Вписать максимальную стадию росать
+        boolean bl2 = bl = i == 5;
+//        Вписать предпоследнюю стадию роста AGE
         if (i > 2) {
+            // Кол-во дропа
             int j = world.random.nextBetween(2,5);
-            CrowsEyeBushBlock.dropStack(world, pos, new ItemStack(ModItems.crows_eye, j + (bl ? 1 : 0)));
+//            Заменить ExampleBushblock                                То что дропает на правый клик
+            ExampleBushBlock.dropStack(world, pos, new ItemStack(ModItems.crows_eye, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
+//                                            Стадия Роста после ПКМ
             BlockState blockState = state.with(AGE, 1);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, blockState));

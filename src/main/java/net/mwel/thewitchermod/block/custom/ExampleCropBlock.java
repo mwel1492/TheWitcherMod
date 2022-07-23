@@ -22,13 +22,14 @@ import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import net.mwel.thewitchermod.item.ModItems;
 
-public class ArenariaCropBlock extends CropBlock {
-    public ArenariaCropBlock(Settings settings) {
+public class ExampleCropBlock extends CropBlock {
+    public ExampleCropBlock(Settings settings) {
         super(settings);
     }
 
     public static final IntProperty AGE = IntProperty.of("age", 0, 3);
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[] {
+//            Высота хитбокста для каждой стадии Роста
             Block.createCuboidShape(.0d, .0d, .0d, 16.d, 2.d, 16.d),
             Block.createCuboidShape(.0d, .0d, .0d, 16.d, 6.d, 16.d),
             Block.createCuboidShape(.0d, .0d, .0d, 16.d, 10.d, 16.d),
@@ -44,7 +45,7 @@ public class ArenariaCropBlock extends CropBlock {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 2;
+        boolean bl2 = bl = i == 3;
         if (!bl && player.getStackInHand(hand).isOf(Items.BONE_MEAL)) {
             return ActionResult.PASS;
         }
@@ -63,12 +64,13 @@ public class ArenariaCropBlock extends CropBlock {
 
     @Override
     protected ItemConvertible getSeedsItem() {
+//        Вписать Семена для Кропа
         return ModItems.crows_eye;
     }
 
     @Override
     public int getMaxAge() {
-        return 5;
+        return 3;
     }
 
     @Override

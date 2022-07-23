@@ -178,7 +178,11 @@ public class ModItems{
     public static final Item arachas_eyes = registerItem("arachas_eyes", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item arachas_venom = registerItem("arachas_venom", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item archespore_tendril = registerItem("archespore_tendril", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+
+//    Регистрация как AliasedCommonModBlock для коректного отображения типа предмета
     public static final Item arenaria = registerItem("arenaria", new AliasedCommonModBlockItem(ModBlocks.arenaria_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+
+
     public static final Item balisse_fruit = registerItem("balisse_fruit", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item barghest_essence = registerItem("barghest_essence", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item basilisk_hide = registerItem("basilisk_hide", new RelicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));

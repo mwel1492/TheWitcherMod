@@ -22,7 +22,6 @@ public class TheWitcherModClient implements ClientModInitializer {
 
 //        Flower Block Renderer
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.arenaria_flower, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.celandine_flower, RenderLayer.getCutout());
 
 
     }
