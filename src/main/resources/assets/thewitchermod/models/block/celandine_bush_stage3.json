@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "thewitchermod:block/celandine_flower"
+    "cross": "thewitchermod:block/celandine_bush_stage3"
   }
 }

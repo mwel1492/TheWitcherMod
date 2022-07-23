@@ -29,8 +29,8 @@ public class CelandineCropBlock extends CropBlock {
 
     public static final IntProperty AGE = IntProperty.of("age", 0, 3);
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[] {
-            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 2.d, 16.d),
-            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 6.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 3.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 7.d, 16.d),
             Block.createCuboidShape(.0d, .0d, .0d, 16.d, 10.d, 16.d),
             Block.createCuboidShape(.0d, .0d, .0d, 16.d, 14.d, 16.d)
 
@@ -44,15 +44,15 @@ public class CelandineCropBlock extends CropBlock {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 5;
+        boolean bl2 = bl = i == 2;
         if (!bl && player.getStackInHand(hand).isOf(Items.BONE_MEAL)) {
             return ActionResult.PASS;
         }
-        if (i > 4) {
-            int j = world.random.nextBetween(1,3);
-            CrowsEyeBushBlock.dropStack(world, pos, new ItemStack(ModItems.celandine, j + (bl ? 1 : 0)));
+        if (i > 2) {
+            int j = world.random.nextBetween(1,5);
+            CelandineBushBlock.dropStack(world, pos, new ItemStack(ModItems.celandine, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.ITEM_CROP_PLANT, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
-            BlockState blockState = state.with(AGE, 3);
+            BlockState blockState = state.with(AGE, 1);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, blockState));
             return ActionResult.success(world.isClient);
@@ -63,12 +63,12 @@ public class CelandineCropBlock extends CropBlock {
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItems.crows_eye;
+        return ModItems.celandine;
     }
 
     @Override
     public int getMaxAge() {
-        return 5;
+        return 3;
     }
 
     @Override

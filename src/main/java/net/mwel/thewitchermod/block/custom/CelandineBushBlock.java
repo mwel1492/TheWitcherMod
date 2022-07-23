@@ -38,7 +38,7 @@ public class CelandineBushBlock extends PlantBlock {
     public static final IntProperty AGE = Properties.AGE_3;
     private static final VoxelShape SMALL_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 6.0, 12.0);
     private static final VoxelShape MEDIUM_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 10.0, 12.0);
-    private static final VoxelShape LARGE_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 16.0, 14.0);
+    private static final VoxelShape LARGE_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 14.0, 14.0);
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
@@ -56,7 +56,7 @@ public class CelandineBushBlock extends PlantBlock {
 
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return new ItemStack(ModBlocks.crows_eye_bush);
+        return new ItemStack(ModBlocks.celandine_bush);
     }
 
     @Override
@@ -74,31 +74,16 @@ public class CelandineBushBlock extends PlantBlock {
         }
     }
 
-    @Override
-    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        if (!(entity instanceof LivingEntity) || entity.getType() == EntityType.FOX || entity.getType() == EntityType.BEE) {
-            return;
-        }
-        entity.slowMovement(state, new Vec3d(0.8f, 0.75, 0.8f));
-        if (!(world.isClient || state.get(AGE) <= 0 || entity.lastRenderX == entity.getX() && entity.lastRenderZ == entity.getZ())) {
-            double d = Math.abs(entity.getX() - entity.lastRenderX);
-            double e = Math.abs(entity.getZ() - entity.lastRenderZ);
-            if (d >= (double)0.003f || e >= (double)0.003f) {
-                entity.damage(DamageSource.GENERIC, 0.5f);
-            }
-        }
-    }
-
-    @Override
+        @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 5;
+        boolean bl2 = bl = i == 3;
         if (i > 2) {
-            int j = world.random.nextBetween(2,5);
+            int j = world.random.nextBetween(2,4);
             CelandineBushBlock.dropStack(world, pos, new ItemStack(ModItems.celandine, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
-            BlockState blockState = state.with(AGE, 1);
+            BlockState blockState = state.with(AGE, 0);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, blockState));
             return ActionResult.success(world.isClient);

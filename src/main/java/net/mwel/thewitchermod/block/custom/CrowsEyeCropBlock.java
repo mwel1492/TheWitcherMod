@@ -54,7 +54,7 @@ public class CrowsEyeCropBlock extends CropBlock {
             int j = world.random.nextBetween(1,3);
             CrowsEyeBushBlock.dropStack(world, pos, new ItemStack(ModItems.crows_eye, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.ITEM_CROP_PLANT, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
-            BlockState blockState = state.with(AGE, 3);
+            BlockState blockState = state.with(AGE, 2);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, blockState));
             return ActionResult.success(world.isClient);
@@ -70,7 +70,7 @@ public class CrowsEyeCropBlock extends CropBlock {
 
     @Override
     public int getMaxAge() {
-        return 5;
+        return 3;
     }
 
     @Override
