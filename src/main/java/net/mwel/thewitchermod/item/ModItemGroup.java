@@ -295,6 +295,10 @@ public class ModItemGroup{
                 stacks.add(new ItemStack(ModItems.wyvern_hide));
 
                 stacks.add(new ItemStack(ModBlocks.crows_eye_bush));
+                stacks.add(new ItemStack(ModBlocks.celandine_bush));
+
+                stacks.add(new ItemStack(ModBlocks.arenaria_flower));
+
 //                stacks.add(new ItemStack(ModItems.mutagen_blue));
 //                stacks.add(new ItemStack(ModItems.mutagen_blue_greater));
 //                stacks.add(new ItemStack(ModItems.mutagen_blue_lesser));

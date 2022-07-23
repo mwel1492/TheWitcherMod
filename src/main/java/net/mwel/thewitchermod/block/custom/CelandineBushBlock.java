@@ -1,6 +1,9 @@
 package net.mwel.thewitchermod.block.custom;
 
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.PlantBlock;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -26,16 +29,16 @@ import net.minecraft.world.event.GameEvent;
 import net.mwel.thewitchermod.block.ModBlocks;
 import net.mwel.thewitchermod.item.ModItems;
 
-public class CrowsEyeBushBlock extends PlantBlock {
-    public CrowsEyeBushBlock(Settings settings) {
+public class CelandineBushBlock extends PlantBlock {
+    public CelandineBushBlock(Settings settings) {
         super(settings);
         this.setDefaultState((this.stateManager.getDefaultState()).with(AGE, 0));
     }
 
     public static final IntProperty AGE = Properties.AGE_3;
-    private static final VoxelShape SMALL_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 8.0, 14.0);
-    private static final VoxelShape MEDIUM_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 16.0, 14.0);
-    private static final VoxelShape LARGE_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 24.0, 14.0);
+    private static final VoxelShape SMALL_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 6.0, 12.0);
+    private static final VoxelShape MEDIUM_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 10.0, 12.0);
+    private static final VoxelShape LARGE_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 16.0, 14.0);
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
@@ -93,7 +96,7 @@ public class CrowsEyeBushBlock extends PlantBlock {
         boolean bl2 = bl = i == 5;
         if (i > 2) {
             int j = world.random.nextBetween(2,5);
-            CrowsEyeBushBlock.dropStack(world, pos, new ItemStack(ModItems.crows_eye, j + (bl ? 1 : 0)));
+            CelandineBushBlock.dropStack(world, pos, new ItemStack(ModItems.celandine, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
             BlockState blockState = state.with(AGE, 1);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);

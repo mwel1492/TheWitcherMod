@@ -178,7 +178,7 @@ public class ModItems{
     public static final Item arachas_eyes = registerItem("arachas_eyes", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item arachas_venom = registerItem("arachas_venom", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item archespore_tendril = registerItem("archespore_tendril", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item arenaria = registerItem("arenaria", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item arenaria = registerItem("arenaria", new AliasedCommonModBlockItem(ModBlocks.arenaria_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item balisse_fruit = registerItem("balisse_fruit", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item barghest_essence = registerItem("barghest_essence", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item basilisk_hide = registerItem("basilisk_hide", new RelicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
@@ -195,7 +195,7 @@ public class ModItems{
     public static final Item buckthorn = registerItem("buckthorn", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item calcium_equum = registerItem("calcium_equum", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item cave_troll_liver = registerItem("cave_troll_liver", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item celandine = registerItem("celandine", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item celandine = registerItem("celandine", new AliasedCommonModBlockItem(ModBlocks.celandine_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item cherry_cordial = registerItem("cherry_cordial", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item chort_hide = registerItem("chort_hide", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item cockatrice_egg = registerItem("cockatrice_egg", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));

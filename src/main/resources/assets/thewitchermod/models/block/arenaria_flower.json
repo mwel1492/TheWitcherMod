@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "thewitchermod:block/crows_eye_bush_stage0"
+    "cross": "thewitchermod:block/arenaria_flower"
   }
 }

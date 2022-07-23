@@ -273,7 +273,15 @@
   "item.thewitchermod.wyvern_egg":"Wyvern egg",
   "item.thewitchermod.wyvern_hide":"Wyvern hide",
   "item.thewitchermod.zerrikanian_powder":"Zerrikanian powder",
+
+  "block.thewitchermod.crows_eye_bush": "Crows eye bush",
+  "block.thewitchermod.celandine_bush": "Celandine bush",
+
+  "block.thewitchermod.arenaria_flower": "Arenaria flower",
+
+
   "itemGroup.thewitchermod.general": "The Witcher Mod",
+
   "tooltip.thewitchermod.commonitem": "Common",
   "tooltip.thewitchermod.magicitem": "Magic",
   "tooltip.thewitchermod.masteritem": "Master",

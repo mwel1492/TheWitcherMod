@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/crop",
+  "parent": "minecraft:block/cross",
   "textures": {
-    "crop": "thewitchermod:block/sweet_berry_bush_stage1"
+    "cross": "thewitchermod:block/crows_eye_bush_stage1"
   }
 }

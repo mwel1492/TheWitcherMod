@@ -1,6 +1,6 @@
 {
-  "parent": "thewitchermod:block/medium_shape",
+  "parent": "thewitchermod:block/cross_medium",
   "textures": {
-    "crop": "thewitchermod:block/sweet_berry_bush_stage2"
+    "cross": "thewitchermod:block/crows_eye_bush_stage2"
   }
 }
