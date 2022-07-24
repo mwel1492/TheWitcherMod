@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "thewitchermod:block/fools_parsley_bush_stage3"
+  }
+}

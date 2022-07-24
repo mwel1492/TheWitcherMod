@@ -36,23 +36,20 @@ public class CelandineBushBlock extends PlantBlock {
     }
 
     public static final IntProperty AGE = Properties.AGE_3;
-    private static final VoxelShape SMALL_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 6.0, 12.0);
-    private static final VoxelShape MEDIUM_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 10.0, 12.0);
-    private static final VoxelShape LARGE_SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 14.0, 14.0);
-
+    public IntProperty getAgeProperty() {
+        return AGE;
+    }
+    private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[] {
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 4.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 6.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 10.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 14.d, 16.d)
+    };
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        if (state.get(AGE) == 0) {
-            return SMALL_SHAPE;
-        }
-        if (state.get(AGE) < 3) {
-            return MEDIUM_SHAPE;
-        }
-        if (state.get(AGE) == 3) {
-            return LARGE_SHAPE;
-        }
-        return super.getOutlineShape(state, world, pos, context);
+        return SHAPE_BY_AGE[state.get(getAgeProperty())];
     }
+
 
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {

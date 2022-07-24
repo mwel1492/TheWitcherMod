@@ -225,7 +225,7 @@ public class ModItems{
     public static final Item fiends_eye = registerItem("fiends_eye", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item fifth_essence = registerItem("fifth_essence", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item foglet_teeth = registerItem("foglet_teeth", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item fools_parsley_leaves = registerItem("fools_parsley_leaves", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item fools_parsley_leaves = registerItem("fools_parsley_leaves", new AliasedCommonModBlockItem(ModBlocks.fools_parsley_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item forktail_hide = registerItem("forktail_hide", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item gargoyle_dust = registerItem("gargoyle_dust", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item gargoyle_heart = registerItem("gargoyle_heart", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));

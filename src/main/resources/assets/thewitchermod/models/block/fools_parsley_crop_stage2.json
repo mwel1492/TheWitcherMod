@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "thewitchermod:block/fools_parsley_crop_stage2"
+  }
+}

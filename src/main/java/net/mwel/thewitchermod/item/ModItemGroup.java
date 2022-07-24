@@ -297,6 +297,9 @@ public class ModItemGroup{
 //              Регистрация блока в Закладке мода
                 stacks.add(new ItemStack(ModBlocks.crows_eye_bush));
                 stacks.add(new ItemStack(ModBlocks.celandine_bush));
+                stacks.add(new ItemStack(ModBlocks.fools_parsley_bush));
+
+
 
                 stacks.add(new ItemStack(ModBlocks.arenaria_flower));
 

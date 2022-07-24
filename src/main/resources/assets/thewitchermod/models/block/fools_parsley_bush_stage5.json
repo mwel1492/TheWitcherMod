@@ -1,0 +1,6 @@
+{
+  "parent": "thewitchermod:block/cross_large",
+  "textures": {
+    "cross": "thewitchermod:block/fools_parsley_bush_stage5"
+  }
+}

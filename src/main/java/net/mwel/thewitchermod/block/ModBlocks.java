@@ -24,12 +24,14 @@ public class ModBlocks {
     //  Wild Bushes
     public static final Block crows_eye_bush = registerBlock("crows_eye_bush", new CrowsEyeBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block celandine_bush = registerBlock("celandine_bush", new CelandineBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
+    public static final Block fools_parsley_bush = registerBlock("fools_parsley_bush", new FoolsParsleyBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
 
 
     // Crop Blocks
     public static final Block arenaria_crop = registerBlockWithoutItem("arenaria_crop", new ArenariaCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block crows_eye_crop = registerBlockWithoutItem("crows_eye_crop", new CrowsEyeCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block celandine_crop = registerBlockWithoutItem("celandine_crop", new CelandineCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+    public static final Block fools_parsley_crop = registerBlockWithoutItem("fools_parsley_crop", new FoolsParsleyCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
 
 

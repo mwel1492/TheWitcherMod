@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "minecraft:block/cross",
   "textures": {
     "layer0": "thewitchermod:block/celandine_bush_stage0"
   }
