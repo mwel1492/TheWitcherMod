@@ -21,6 +21,9 @@ public class ModBlocks {
 
 
 
+
+
+
     //  Wild Bushes
     public static final Block crows_eye_bush = registerBlock("crows_eye_bush", new CrowsEyeBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block celandine_bush = registerBlock("celandine_bush", new CelandineBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
