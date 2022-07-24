@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "layer0": "thewitchermod:block/celandine_bush_stage0"
+    "cross": "thewitchermod:block/celandine_bush_stage0"
   }
 }
