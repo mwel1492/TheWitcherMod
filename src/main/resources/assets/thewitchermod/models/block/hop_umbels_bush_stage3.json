@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "thewitchermod:block/hop_umbels_bush_stage3"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "thewitchermod:block/cross_large",
+  "textures": {
+    "cross": "thewitchermod:block/hop_umbels_bush_stage7"
+  }
+}

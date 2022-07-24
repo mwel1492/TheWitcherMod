@@ -22,16 +22,19 @@ import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import net.mwel.thewitchermod.item.ModItems;
 
-public class ArenariaCropBlock extends CropBlock {
-    public ArenariaCropBlock(Settings settings) {
+public class HopUmbelsCropBlock extends CropBlock {
+    public HopUmbelsCropBlock(Settings settings) {
         super(settings);
     }
 
-    public static final IntProperty AGE = IntProperty.of("age", 0, 3);
+    public static final IntProperty AGE = IntProperty.of("age", 0, 6);
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[] {
-            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 2.d, 16.d),
-            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 6.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 3.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 7.d, 16.d),
             Block.createCuboidShape(.0d, .0d, .0d, 16.d, 10.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 12.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 14.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 14.d, 16.d),
             Block.createCuboidShape(.0d, .0d, .0d, 16.d, 14.d, 16.d)
 
     };
@@ -44,15 +47,15 @@ public class ArenariaCropBlock extends CropBlock {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 3;
+        boolean bl2 = bl = i == 6;
         if (!bl && player.getStackInHand(hand).isOf(Items.BONE_MEAL)) {
             return ActionResult.PASS;
         }
-        if (i > 2) {
-            int j = world.random.nextBetween(1,3);
-            ArenariaCropBlock.dropStack(world, pos, new ItemStack(ModItems.arenaria, j + (bl ? 1 : 0)));
+        if (i > 5) {
+            int j = world.random.nextBetween(1,5);
+            HopUmbelsCropBlock.dropStack(world, pos, new ItemStack(ModItems.hop_umbels, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.ITEM_CROP_PLANT, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
-            BlockState blockState = state.with(AGE, 3);
+            BlockState blockState = state.with(AGE, 2);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, blockState));
             return ActionResult.success(world.isClient);
@@ -63,12 +66,12 @@ public class ArenariaCropBlock extends CropBlock {
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItems.arenaria;
+        return ModItems.hop_umbels;
     }
 
     @Override
     public int getMaxAge() {
-        return 3;
+        return 6;
     }
 
     @Override

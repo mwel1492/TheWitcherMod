@@ -298,6 +298,7 @@ public class ModItemGroup{
                 stacks.add(new ItemStack(ModBlocks.crows_eye_bush));
                 stacks.add(new ItemStack(ModBlocks.celandine_bush));
                 stacks.add(new ItemStack(ModBlocks.fools_parsley_bush));
+                stacks.add(new ItemStack(ModBlocks.hop_umbels_bush));
 
 
 

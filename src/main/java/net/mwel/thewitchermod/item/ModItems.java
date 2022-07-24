@@ -182,7 +182,6 @@ public class ModItems{
 //    Регистрация как AliasedCommonModBlock для коректного отображения типа предмета
     public static final Item arenaria = registerItem("arenaria", new AliasedCommonModBlockItem(ModBlocks.arenaria_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
 
-
     public static final Item balisse_fruit = registerItem("balisse_fruit", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item barghest_essence = registerItem("barghest_essence", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item basilisk_hide = registerItem("basilisk_hide", new RelicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
@@ -244,7 +243,7 @@ public class ModItems{
     public static final Item harpy_talons = registerItem("harpy_talons", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item hellebore_petals = registerItem("hellebore_petals", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item honeysuckle = registerItem("honeysuckle", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item hop_umbels = registerItem("hop_umbels", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item hop_umbels = registerItem("hop_umbels", new AliasedCommonModBlockItem(ModBlocks.hop_umbels_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item hornwort = registerItem("hornwort", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item hydragenum = registerItem("hydragenum", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item kikimore_discharge = registerItem("kikimore_discharge", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
