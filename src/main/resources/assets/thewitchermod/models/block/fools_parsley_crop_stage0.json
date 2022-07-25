@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/crop",
+  "parent": "minecraft:block/cross",
   "textures": {
-    "crop": "thewitchermod:block/fools_parsley_crop_stage0"
+    "cross": "thewitchermod:block/fools_parsley_crop_stage0"
   }
 }

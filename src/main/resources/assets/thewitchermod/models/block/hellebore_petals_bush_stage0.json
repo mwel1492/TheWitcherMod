@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "thewitchermod:block/hellebore_petals_bush_stage0"
+  }
+}

@@ -35,7 +35,7 @@ public class ExampleBushBlock extends PlantBlock {
         this.setDefaultState((this.stateManager.getDefaultState()).with(AGE, 0));
     }
 // Максимальная стадия Роста
-    public static final IntProperty AGE = Properties.AGE_3;
+public static final IntProperty AGE = IntProperty.of("age", 0, 3);
     public IntProperty getAgeProperty() {
         return AGE;
     }
@@ -63,7 +63,7 @@ public class ExampleBushBlock extends PlantBlock {
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         int i = state.get(AGE);
-        if (i < 3 && random.nextInt(5) == 0 && world.getBaseLightLevel(pos.up(), 0) >= 9) {
+        if (i < 3 && random.nextInt(3) == 0 && world.getBaseLightLevel(pos.up(), 0) >= 9) {
             BlockState blockState = state.with(AGE, i + 1);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(blockState));

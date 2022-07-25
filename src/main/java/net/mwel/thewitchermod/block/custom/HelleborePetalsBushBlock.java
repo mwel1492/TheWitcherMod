@@ -29,25 +29,22 @@ import net.minecraft.world.event.GameEvent;
 import net.mwel.thewitchermod.block.ModBlocks;
 import net.mwel.thewitchermod.item.ModItems;
 
-public class HanFiberBushBlock extends PlantBlock {
-    public HanFiberBushBlock(Settings settings) {
+public class HelleborePetalsBushBlock extends PlantBlock {
+    public HelleborePetalsBushBlock(Settings settings) {
         super(settings);
         this.setDefaultState((this.stateManager.getDefaultState()).with(AGE, 0));
     }
-    public static final IntProperty AGE = IntProperty.of("age", 0, 7);
+
+    public static final IntProperty AGE = IntProperty.of("age", 0, 4);
     public IntProperty getAgeProperty() {
         return AGE;
     }
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[] {
             Block.createCuboidShape(.0d, .0d, .0d, 16.d, 3.d, 16.d),
             Block.createCuboidShape(.0d, .0d, .0d, 16.d, 7.d, 16.d),
-            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 12.d, 16.d),
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 10d, 16.d),
             Block.createCuboidShape(.0d, .0d, .0d, 16.d, 14.d, 16.d),
-            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 16.d, 16.d),
-            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 20.d, 16.d),
-            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 24.d, 16.d),
-            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 24.d, 16.d)
-
+            Block.createCuboidShape(.0d, .0d, .0d, 16.d, 14.d, 16.d)
 
     };
     @Override
@@ -57,32 +54,32 @@ public class HanFiberBushBlock extends PlantBlock {
 
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return new ItemStack(ModBlocks.han_fiber_bush);
+        return new ItemStack(ModBlocks.hellebore_petals_bush);
     }
 
     @Override
     public boolean hasRandomTicks(BlockState state) {
-        return state.get(AGE) < 7;
+        return state.get(AGE) < 4;
     }
 
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         int i = state.get(AGE);
-        if (i < 7 && random.nextInt(7) == 0 && world.getBaseLightLevel(pos.up(), 0) >= 9) {
+        if (i < 4 && random.nextInt(4) == 0 && world.getBaseLightLevel(pos.up(), 0) >= 9) {
             BlockState blockState = state.with(AGE, i + 1);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(blockState));
         }
     }
 
-        @Override
+       @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 7;
-        if (i > 6) {
-            int j = world.random.nextBetween(1,5);
-            HanFiberBushBlock.dropStack(world, pos, new ItemStack(ModItems.han_fiber, j + (bl ? 1 : 0)));
+        boolean bl2 = bl = i == 4;
+        if (i > 3) {
+            int j = world.random.nextBetween(1,4);
+            HelleborePetalsBushBlock.dropStack(world, pos, new ItemStack(ModItems.hellebore_petals, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
             BlockState blockState = state.with(AGE, 1);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
@@ -96,4 +93,6 @@ public class HanFiberBushBlock extends PlantBlock {
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(AGE);
     }
+
+
 }

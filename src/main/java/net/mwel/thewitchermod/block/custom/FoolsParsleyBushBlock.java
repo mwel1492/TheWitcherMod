@@ -34,7 +34,7 @@ public class FoolsParsleyBushBlock extends PlantBlock {
         super(settings);
         this.setDefaultState((this.stateManager.getDefaultState()).with(AGE, 0));
     }
-    public static final IntProperty AGE = Properties.AGE_5;
+    public static final IntProperty AGE = IntProperty.of("age", 0, 5);
     public IntProperty getAgeProperty() {
         return AGE;
     }
