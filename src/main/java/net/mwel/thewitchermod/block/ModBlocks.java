@@ -38,6 +38,7 @@ public class ModBlocks {
     public static final Block fools_parsley_crop = registerBlockWithoutItem("fools_parsley_crop", new FoolsParsleyCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block hop_umbels_crop = registerBlockWithoutItem("hop_umbels_crop", new HopUmbelsCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block han_fiber_crop = registerBlockWithoutItem("han_fiber_crop", new HanFiberCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+    public static final Block hellebore_petals_crop = registerBlockWithoutItem("hellebore_petals_crop", new HelleborePetalsCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
 
 

@@ -241,7 +241,7 @@ public class ModItems{
     public static final Item harpy_eggs = registerItem("harpy_eggs", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item harpy_feathers = registerItem("harpy_feathers", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item harpy_talons = registerItem("harpy_talons", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item hellebore_petals = registerItem("hellebore_petals", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item hellebore_petals = registerItem("hellebore_petals", new AliasedCommonModBlockItem(ModBlocks.hellebore_petals_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item honeysuckle = registerItem("honeysuckle", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item hop_umbels = registerItem("hop_umbels", new AliasedCommonModBlockItem(ModBlocks.hop_umbels_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item hornwort = registerItem("hornwort", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));

@@ -1,0 +1,6 @@
+{
+  "parent": "thewitchermod:block/crop_flower",
+  "textures": {
+    "crop_flower": "thewitchermod:block/hellebore_petals_crop_stage2"
+  }
+}
