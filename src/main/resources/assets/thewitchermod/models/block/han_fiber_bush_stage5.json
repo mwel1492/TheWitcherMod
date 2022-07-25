@@ -1,0 +1,6 @@
+{
+  "parent": "thewitchermod:block/cross_medium",
+  "textures": {
+    "cross": "thewitchermod:block/han_fiber_bush_stage5"
+  }
+}

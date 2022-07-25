@@ -27,6 +27,7 @@ public class ModBlocks {
     public static final Block celandine_bush = registerBlock("celandine_bush", new CelandineBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block fools_parsley_bush = registerBlock("fools_parsley_bush", new FoolsParsleyBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block hop_umbels_bush = registerBlock("hop_umbels_bush", new HopUmbelsBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
+    public static final Block han_fiber_bush = registerBlock("han_fiber_bush", new HanFiberBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
 
 
     // Crop Blocks
@@ -35,6 +36,7 @@ public class ModBlocks {
     public static final Block celandine_crop = registerBlockWithoutItem("celandine_crop", new CelandineCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block fools_parsley_crop = registerBlockWithoutItem("fools_parsley_crop", new FoolsParsleyCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block hop_umbels_crop = registerBlockWithoutItem("hop_umbels_crop", new HopUmbelsCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+    public static final Block han_fiber_crop = registerBlockWithoutItem("han_fiber_crop", new HanFiberCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
 
 

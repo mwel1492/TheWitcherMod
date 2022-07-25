@@ -237,7 +237,7 @@ public class ModItems{
     public static final Item green_mold = registerItem("green_mold", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item griffin_feathers = registerItem("griffin_feathers", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item griffins_egg = registerItem("griffins_egg", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item han_fiber = registerItem("han_fiber", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item han_fiber = registerItem("han_fiber", new AliasedCommonModBlockItem(ModBlocks.han_fiber_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item harpy_eggs = registerItem("harpy_eggs", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item harpy_feathers = registerItem("harpy_feathers", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item harpy_talons = registerItem("harpy_talons", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));

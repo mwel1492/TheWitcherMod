@@ -1,6 +1,6 @@
 {
   "parent": "thewitchermod:block/cross_large",
   "textures": {
-    "cross": "thewitchermod:block/fools_parsley_bush_stage4"
+    "cross": "thewitchermod:block/han_fiber_bush_stage6"
   }
 }

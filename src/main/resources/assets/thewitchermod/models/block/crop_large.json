@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
+	"texture_size": [16, 24],
 	"textures": {
 		"particle": "#crop"
 	},
