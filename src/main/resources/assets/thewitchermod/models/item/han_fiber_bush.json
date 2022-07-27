@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "thewitchermod:item/crows_eye_bush"
+    "layer0": "thewitchermod:item/han_fiber_bush"
   }
 }

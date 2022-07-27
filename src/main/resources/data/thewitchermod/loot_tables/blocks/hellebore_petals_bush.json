@@ -9,15 +9,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thewitchermod:crows_eye"
+          "name": "thewitchermod:hellebore_petals"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "thewitchermod:crows_eye_bush",
+          "block": "thewitchermod:hellebore_petals_bush",
           "properties": {
-            "age": "3"
+            "age": "4"
           }
         }
       ]
@@ -27,7 +27,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thewitchermod:crows_eye_bush"
+          "name": "thewitchermod:hellebore_petals_bush"
         }
       ],
       "conditions": [

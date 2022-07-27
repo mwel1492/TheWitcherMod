@@ -302,7 +302,6 @@ public class ModItemGroup{
                 stacks.add(new ItemStack(ModBlocks.han_fiber_bush));
                 stacks.add(new ItemStack(ModBlocks.hellebore_petals_bush));
 
-                stacks.add(new ItemStack(ModBlocks.cortinarius_mushroom));
 
 
 

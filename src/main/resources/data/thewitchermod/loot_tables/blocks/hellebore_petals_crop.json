@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thewitchermod:crows_eye"
+          "name": "thewitchermod:hellebore_petals"
         }
       ]
     },
@@ -17,7 +17,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thewitchermod:crows_eye",
+          "name": "thewitchermod:hellebore_petals",
           "functions": [
             {
               "function": "minecraft:apply_bonus",
@@ -41,9 +41,9 @@
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "thewitchermod:crows_eye_crop",
+          "block": "thewitchermod:hellebore_petals_crop",
           "properties": {
-            "age": "5"
+            "age": "3"
           }
         }
       ]

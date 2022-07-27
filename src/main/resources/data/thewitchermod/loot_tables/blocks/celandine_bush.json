@@ -9,13 +9,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thewitchermod:crows_eye"
+          "name": "thewitchermod:celandine"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "thewitchermod:crows_eye_bush",
+          "block": "thewitchermod:celandine_bush",
           "properties": {
             "age": "3"
           }
@@ -27,7 +27,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thewitchermod:crows_eye_bush"
+          "name": "thewitchermod:celandine_bush"
         }
       ],
       "conditions": [

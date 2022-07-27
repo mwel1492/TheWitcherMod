@@ -9,15 +9,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thewitchermod:crows_eye"
+          "name": "thewitchermod:hop_umbels"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "thewitchermod:crows_eye_bush",
+          "block": "thewitchermod:hop_umbels_bush",
           "properties": {
-            "age": "3"
+            "age": "7"
           }
         }
       ]
@@ -27,7 +27,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thewitchermod:crows_eye_bush"
+          "name": "thewitchermod:hop_umbels_bush"
         }
       ],
       "conditions": [
