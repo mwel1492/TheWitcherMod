@@ -203,7 +203,7 @@ public class ModItems{
     public static final Item chort_hide = registerItem("chort_hide", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item cockatrice_egg = registerItem("cockatrice_egg", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item cockatrice_stomach = registerItem("cockatrice_stomach", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item cortinarius = registerItem("cortinarius", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item cortinarius = registerItem("cortinarius", new AliasedCommonModBlockItem(ModBlocks.cortinarius_mushroom, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item crows_eye = registerItem("crows_eye",new AliasedCommonModBlockItem(ModBlocks.crows_eye_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item crystalized_essence = registerItem("crystalized_essence", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item cyclops_eye = registerItem("cyclops_eye", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));

@@ -3,7 +3,6 @@ package net.mwel.thewitchermod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -15,12 +14,6 @@ import net.mwel.thewitchermod.block.custom.*;
 import net.mwel.thewitchermod.item.ModItemGroup;
 
 public class ModBlocks {
-
-    // Flower Blocks
-    public static final Block arenaria_flower = registerBlock("arenaria_flower", new FlowerBlock(StatusEffects.BLINDNESS, 12, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque().sounds(BlockSoundGroup.GRASS)), ModItemGroup.THE_WITCHER);
-
-
-
 
     //  Wild Bushes
     public static final Block crows_eye_bush = registerBlock("crows_eye_bush", new CrowsEyeBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
@@ -39,6 +32,10 @@ public class ModBlocks {
     public static final Block hop_umbels_crop = registerBlockWithoutItem("hop_umbels_crop", new HopUmbelsCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block han_fiber_crop = registerBlockWithoutItem("han_fiber_crop", new HanFiberCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block hellebore_petals_crop = registerBlockWithoutItem("hellebore_petals_crop", new HelleborePetalsCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+
+
+//    Mushrooms
+    public static final Block cortinarius_mushroom = registerBlockWithoutItem("cortinarius_mushroom", new CortinariusMushroomPlant(AbstractBlock.Settings.of(Material.PLANT, MapColor.BROWN).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS)));
 
 
 

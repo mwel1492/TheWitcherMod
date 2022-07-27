@@ -1,0 +1,6 @@
+{
+  "parent": "thewitchermod:block/cross_mushroom",
+  "textures": {
+    "cross_mushroom": "thewitchermod:block/cortinarius_mushroom"
+  }
+}
