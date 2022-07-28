@@ -1,0 +1,82 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "tw3pack:items/food/camembert_w3eat",
+		"layer0": "tw3pack:items/food/camembert_w3eat"
+	},
+	"elements": [
+		{
+			"name": "1",
+			"from": [5, 0, 5],
+			"to": [8, 3, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 6, 6], "texture": "#layer0"},
+				"east": {"uv": [0, 6, 12, 12], "texture": "#layer0"},
+				"south": {"uv": [0, 0, 6, 6], "texture": "#layer0"},
+				"west": {"uv": [0, 0, 12, 6], "texture": "#layer0"},
+				"up": {"uv": [0, 0, 6, 12], "texture": "#layer0"},
+				"down": {"uv": [0, 0, 6, 12], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "2",
+			"from": [8, 0, 8],
+			"to": [11, 3, 11],
+			"faces": {
+				"north": {"uv": [6, 6, 12, 12], "texture": "#layer0"},
+				"east": {"uv": [0, 6, 6, 12], "texture": "#layer0"},
+				"south": {"uv": [6, 12, 0, 6], "texture": "#layer0"},
+				"up": {"uv": [6, 6, 0, 12], "texture": "#layer0"},
+				"down": {"uv": [6, 0, 0, 6], "texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [60, 50, 0],
+			"translation": [0, 5, 4],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [60, -50, 0],
+			"translation": [0, 5, 4],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -180, 0],
+			"translation": [-2, 7.75, 3],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, 0],
+			"translation": [-2, 7.75, 3],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"ground": {
+			"translation": [0, 4.5, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"gui": {
+			"rotation": [30, -145, 0],
+			"translation": [0, 5.25, 0],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"head": {
+			"translation": [0, 14.25, 5.5]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -18],
+			"scale": [2.25, 2.25, 2.25]
+		}
+	},
+	"groups": [
+		{
+			"name": "cheese",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

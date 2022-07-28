@@ -1,0 +1,98 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "tw3pack:items/food/chicken_leg_w3eat",
+		"layer0": "tw3pack:items/food/chicken_leg_w3eat"
+	},
+	"elements": [
+		{
+			"name": "1",
+			"from": [7.2, -0.2, 4],
+			"to": [10.2, 1.7, 8],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8.7, 0.75, 5]},
+			"faces": {
+				"north": {"uv": [0, 5, 8, 10], "texture": "#layer0"},
+				"east": {"uv": [8, 5, 0, 10], "texture": "#layer0"},
+				"south": {"uv": [0, 5, 8, 10], "texture": "#layer0"},
+				"west": {"uv": [8, 5, 0, 10], "texture": "#layer0"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#layer0"},
+				"down": {"uv": [0, 8, 8, 0], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "2",
+			"from": [8.4, 0.15, 8],
+			"to": [9.7, 1.35, 11],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8.7, 0.75, 5]},
+			"faces": {
+				"east": {"uv": [2, 0, 8, 2], "texture": "#layer0"},
+				"west": {"uv": [0, 0.25, 6, 2.25], "texture": "#layer0"},
+				"up": {"uv": [0, 0, 2, 6], "texture": "#layer0"},
+				"down": {"uv": [0, 0, 2, 6], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "3",
+			"from": [8.25, 0.05, 11],
+			"to": [9.85, 1.45, 12],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8.7, 0.75, 5]},
+			"faces": {
+				"north": {"uv": [5, 0, 8, 3], "texture": "#layer0"},
+				"east": {"uv": [0, 0, 1, 1.4], "texture": "#layer0"},
+				"south": {"uv": [0, 0, 3, 3], "texture": "#layer0"},
+				"west": {"uv": [0, 0, 1, 1.4], "texture": "#layer0"},
+				"up": {"uv": [0, 0, 3, 2], "texture": "#layer0"},
+				"down": {"uv": [0, 0, 3, 2], "texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [110, 0, 90],
+			"translation": [-6, 2, -0.5],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [110, 0, -90],
+			"translation": [5, 2, -0.5],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [70, 0, 60],
+			"translation": [-6.25, 5.75, 5.25],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [70, 9, -120],
+			"translation": [1.5, 5.25, 0.75],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"ground": {
+			"rotation": [90, -117, 0],
+			"translation": [0, 2, 5.5],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"gui": {
+			"rotation": [50, -50, 0],
+			"translation": [-0.5, 5, 0],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"head": {
+			"translation": [0, 15, 5.5]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0.5, -13.75],
+			"scale": [1.75, 1.75, 1.75]
+		}
+	},
+	"groups": [
+		{
+			"name": "chicken_leg",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

@@ -1,0 +1,60 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "tw3pack:items/food/baked_potato_w3eat",
+		"layer0": "tw3pack:items/food/baked_potato_w3eat"
+	},
+	"elements": [
+		{
+			"name": "baked_potato",
+			"from": [6, 0, 7],
+			"to": [10, 2, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 4], "texture": "#layer0"},
+				"east": {"uv": [2, 0, 6, 4], "texture": "#layer0"},
+				"south": {"uv": [0, 0, 8, 4], "texture": "#layer0"},
+				"west": {"uv": [4, 0, 8, 4], "texture": "#layer0"},
+				"up": {"uv": [0, 0, 8, 4], "texture": "#layer0"},
+				"down": {"uv": [0, 0, 8, 4], "texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [65, 120, 0],
+			"translation": [0, 3.75, 5],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [65, 120, 0],
+			"translation": [0, 3.75, 5],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 120, 0],
+			"translation": [-2, 10.75, 3]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 120, 0],
+			"translation": [-2, 10.75, 3]
+		},
+		"ground": {
+			"translation": [0, 6, 0]
+		},
+		"gui": {
+			"rotation": [30, 35, 0],
+			"translation": [0, 9, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"head": {
+			"translation": [0, 16.5, 5.5],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"fixed": {
+			"rotation": [-90, 35, 0],
+			"translation": [0, 0, -16],
+			"scale": [2, 2, 2]
+		}
+	}
+}

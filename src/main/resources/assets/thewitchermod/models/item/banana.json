@@ -1,0 +1,97 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "tw3pack:items/food/banana_w3eat",
+		"layer0": "tw3pack:items/food/banana_w3eat"
+	},
+	"elements": [
+		{
+			"name": "1",
+			"from": [7, 6, 7.5],
+			"to": [9, 8.5, 9.5],
+			"faces": {
+				"north": {"uv": [14, 0, 16, 2.5], "texture": "#layer0"},
+				"east": {"uv": [8, 0, 10, 2.5], "texture": "#layer0"},
+				"south": {"uv": [12, 0, 14, 2.5], "texture": "#layer0"},
+				"west": {"uv": [10, 0, 12, 2.5], "texture": "#layer0"},
+				"up": {"uv": [8, 2.5, 10, 4.5], "texture": "#layer0"},
+				"down": {"uv": [10, 2.5, 12, 4.5], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "2",
+			"from": [7, 0, 7.5],
+			"to": [9, 2, 9.5],
+			"faces": {
+				"north": {"uv": [0, 2, 2, 4], "texture": "#layer0"},
+				"east": {"uv": [2, 2, 4, 4], "texture": "#layer0"},
+				"south": {"uv": [4, 2, 6, 4], "texture": "#layer0"},
+				"west": {"uv": [6, 2, 8, 4], "texture": "#layer0"},
+				"up": {"uv": [8, 2.5, 10, 4.5], "texture": "#layer0"},
+				"down": {"uv": [10, 2.5, 12, 4.5], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "3",
+			"from": [7, 2, 8],
+			"to": [9, 6, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 4], "texture": "#layer0"},
+				"east": {"uv": [2, 0, 4, 4], "texture": "#layer0"},
+				"south": {"uv": [4, 0, 6, 4], "texture": "#layer0"},
+				"west": {"uv": [6, 0, 8, 4], "texture": "#layer0"},
+				"up": {"uv": [0, 4, 2, 6], "texture": "#layer0"},
+				"down": {"uv": [2, 4, 4, 6], "texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [27, -180, -3],
+			"translation": [0, 3.5, 1.75],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [27, -180, -3],
+			"translation": [0, 3.5, 1.75],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [-24, -180, 0],
+			"translation": [-6, 7.75, 6.75],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-24, -180, 0],
+			"translation": [-6, 7.75, 6.75],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 1, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"gui": {
+			"rotation": [-40, 137, 38],
+			"translation": [1.5, 2.5, 0],
+			"scale": [0.95, 0.95, 0.95]
+		},
+		"head": {
+			"translation": [0, 14.25, 5.5]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [-0.5, 3.25, -1.25],
+			"scale": [1.25, 1.25, 1.25]
+		}
+	},
+	"groups": [
+		{
+			"name": "banana",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

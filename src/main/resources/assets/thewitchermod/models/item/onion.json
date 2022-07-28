@@ -1,0 +1,94 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "tw3pack:items/food/onion_w3eat",
+		"layer0": "tw3pack:items/food/onion_w3eat"
+	},
+	"elements": [
+		{
+			"name": "1",
+			"from": [6.5, 0.5, 6.5],
+			"to": [9.5, 3.5, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 2.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 3, 3], "texture": "#layer0"},
+				"east": {"uv": [3, 0, 6, 3], "texture": "#layer0"},
+				"south": {"uv": [6, 0, 9, 3], "texture": "#layer0"},
+				"west": {"uv": [9, 0, 12, 3], "texture": "#layer0"},
+				"up": {"uv": [3, 3, 6, 6], "texture": "#layer0"},
+				"down": {"uv": [0, 3, 3, 6], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "2",
+			"from": [7.5, 3.5, 7.5],
+			"to": [8.5, 4, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 2.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 6, 1, 7], "texture": "#layer0"},
+				"east": {"uv": [1, 6, 2, 7], "texture": "#layer0"},
+				"south": {"uv": [2, 6, 3, 7], "texture": "#layer0"},
+				"west": {"uv": [3, 6, 4, 7], "texture": "#layer0"},
+				"up": {"uv": [4, 6, 5, 7], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "3",
+			"from": [7.5, 0, 7.5],
+			"to": [8.5, 0.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 2.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 7, 1, 8], "texture": "#layer0"},
+				"east": {"uv": [1, 7, 2, 8], "texture": "#layer0"},
+				"south": {"uv": [2, 7, 3, 8], "texture": "#layer0"},
+				"west": {"uv": [3, 7, 4, 8], "texture": "#layer0"},
+				"down": {"uv": [4, 7, 5, 8], "texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [65, 0, 0],
+			"translation": [0, 3, 4.25],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [65, 0, 0],
+			"translation": [0, 3, 4.25],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_righthand": {
+			"translation": [-2, 7.75, 3],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"translation": [-2, 7.75, 3],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"ground": {
+			"translation": [0, 4, 0],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"gui": {
+			"rotation": [30, 23, -25],
+			"translation": [3, 5.25, 0],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"head": {
+			"translation": [0, 14.25, 5.5]
+		},
+		"fixed": {
+			"translation": [0, 9.5, -2.5],
+			"scale": [1.75, 1.75, 1.75]
+		}
+	},
+	"groups": [
+		{
+			"name": "onion",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

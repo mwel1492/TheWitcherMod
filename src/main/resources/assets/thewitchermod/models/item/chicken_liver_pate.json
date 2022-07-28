@@ -1,0 +1,62 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "tw3pack:items/food/chicken_liver_pate_w3eat",
+		"layer0": "tw3pack:items/food/chicken_liver_pate_w3eat"
+	},
+	"elements": [
+		{
+			"name": "pate",
+			"from": [7, 0, 6],
+			"to": [9, 2, 10],
+			"faces": {
+				"north": {"uv": [0, 8, 4, 12], "texture": "#layer0"},
+				"east": {"uv": [0, 0, 8, 4], "texture": "#layer0"},
+				"south": {"uv": [4, 8, 8, 12], "texture": "#layer0"},
+				"west": {"uv": [0, 4, 8, 8], "texture": "#layer0"},
+				"up": {"uv": [8, 0, 12, 8], "texture": "#layer0"},
+				"down": {"uv": [8, 8, 12, 16], "texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [65, 90, 0],
+			"translation": [0, 2.75, 5.5],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [65, 90, 0],
+			"translation": [0, 2.75, 5.5],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [-3.75, 9.75, 4.75],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, 0],
+			"translation": [-3.75, 9.75, 4.75],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"gui": {
+			"rotation": [30, 35, 0],
+			"translation": [0.25, 7, 0],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"head": {
+			"translation": [0, 14.25, 5.5]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -14],
+			"scale": [1.75, 1.75, 1.75]
+		}
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "tw3pack:items/food/cucumber_w3eat",
+		"layer0": "tw3pack:items/food/cucumber_w3eat"
+	},
+	"elements": [
+		{
+			"name": "1",
+			"from": [7, 0, 7],
+			"to": [9, 5, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 5], "texture": "#layer0"},
+				"east": {"uv": [2, 0, 4, 5], "texture": "#layer0"},
+				"south": {"uv": [4, 0, 6, 5], "texture": "#layer0"},
+				"west": {"uv": [6, 0, 8, 5], "texture": "#layer0"},
+				"up": {"uv": [0, 5, 2, 7], "texture": "#layer0"},
+				"down": {"uv": [2, 5, 4, 7], "texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [49, -90, 12],
+			"translation": [0, 3.75, 3],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [49, -90, 12],
+			"translation": [0, 3.75, 3],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"firstperson_righthand": {
+			"rotation": [-15, -90, 0],
+			"translation": [-4.75, 8.5, 5],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-15, -90, 0],
+			"translation": [-4.75, 8.5, 5],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"ground": {
+			"translation": [0, 4.5, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [-7, -164, 15],
+			"translation": [1.75, 5.25, 0],
+			"scale": [1.15, 1.15, 1.15]
+		},
+		"head": {
+			"translation": [0, 8.5, 5.5],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"fixed": {
+			"rotation": [1, 0, 0],
+			"translation": [0, 8, -1.25],
+			"scale": [1.55, 1.55, 1.55]
+		}
+	}
+}

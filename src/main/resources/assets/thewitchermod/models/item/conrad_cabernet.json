@@ -1,0 +1,108 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "potion",
+	"textures": {
+		"0": "tw3pack:items/food/conrad_cabernet_w3eat",
+		"particle": "tw3pack:items/food/conrad_cabernet_w3eat"
+	},
+	"elements": [
+		{
+			"name": "body1",
+			"from": [7, 0, 7],
+			"to": [9, 5, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 5], "texture": "#0"},
+				"east": {"uv": [2, 6, 4, 11], "texture": "#0"},
+				"south": {"uv": [0, 7, 2, 12], "texture": "#0"},
+				"west": {"uv": [2, 0, 4, 5], "texture": "#0"},
+				"up": {"uv": [0, 7, 2, 9], "texture": "#0"},
+				"down": {"uv": [0, 10, 2, 12], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body2",
+			"from": [7.15, 5, 7.2],
+			"to": [8.85, 6, 8.8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 3, 7]},
+			"faces": {
+				"north": {"uv": [0, 9.5, 2, 11], "texture": "#0"},
+				"east": {"uv": [0, 9.5, 2, 11], "texture": "#0"},
+				"south": {"uv": [0, 9.5, 2, 11], "texture": "#0"},
+				"west": {"uv": [0, 9.5, 2, 11], "texture": "#0"},
+				"up": {"uv": [0, 10, 2, 12], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body3",
+			"from": [7.5, 6, 7.5],
+			"to": [8.5, 8, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.1, 10, 8.1]},
+			"faces": {
+				"north": {"uv": [0, 4, 2, 7.5], "texture": "#0"},
+				"east": {"uv": [0, 4, 2, 7.5], "texture": "#0"},
+				"south": {"uv": [0, 4, 2, 7.5], "texture": "#0"},
+				"west": {"uv": [0, 4, 2, 7.5], "texture": "#0"},
+				"up": {"uv": [0, 6, 2, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "cork",
+			"from": [7.6, 8, 7.6],
+			"to": [8.4, 8.2, 8.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.1, 10, 8.1]},
+			"faces": {
+				"north": {"uv": [7, 0, 8, 0.5], "texture": "#0"},
+				"east": {"uv": [7, 0, 8, 0.5], "texture": "#0"},
+				"south": {"uv": [7, 0, 8, 0.5], "texture": "#0"},
+				"west": {"uv": [7, 0, 8, 0.5], "texture": "#0"},
+				"up": {"uv": [7, 0, 8, 1], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -180, 0],
+			"translation": [0, 5, -0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -180, 0],
+			"translation": [0, 5, -0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [-17, -180, 0],
+			"translation": [-1.5, 8, 0.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-17, -180, 0],
+			"translation": [-1.5, 8, 0.5]
+		},
+		"ground": {
+			"translation": [0, 4, 0]
+		},
+		"gui": {
+			"rotation": [0, 165, 30],
+			"translation": [3.75, 6.25, 0],
+			"scale": [1.75, 1.75, 1.75]
+		},
+		"head": {
+			"rotation": [0, -180, 0],
+			"translation": [0, 22.5, 6.25],
+			"scale": [2, 2, 2]
+		},
+		"fixed": {
+			"rotation": [-90, -180, 0],
+			"translation": [0, 0, -31.75],
+			"scale": [4, 4, 4]
+		}
+	},
+	"groups": [
+		{
+			"name": "conrad_cabernet",
+			"origin": [7.1, 10, 8.1],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

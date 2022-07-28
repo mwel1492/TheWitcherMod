@@ -1,0 +1,91 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "tw3pack:items/food/raw_meat_w3eat",
+		"layer0": "tw3pack:items/food/raw_meat_w3eat"
+	},
+	"elements": [
+		{
+			"name": "1",
+			"from": [6, 0, 7],
+			"to": [10, 5, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 5], "texture": "#layer0"},
+				"east": {"uv": [6, 0, 8, 5], "texture": "#layer0"},
+				"south": {"uv": [8, 0, 12, 5], "texture": "#layer0"},
+				"west": {"uv": [4, 0, 6, 5], "texture": "#layer0"},
+				"up": {"uv": [0, 5, 4, 7], "texture": "#layer0"},
+				"down": {"uv": [0, 9, 4, 7], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "2",
+			"from": [10, 3, 7],
+			"to": [11, 5, 9],
+			"faces": {
+				"north": {"uv": [0, 9, 1, 11], "texture": "#layer0"},
+				"east": {"uv": [4, 9, 6, 11], "texture": "#layer0"},
+				"south": {"uv": [1, 9, 2, 11], "texture": "#layer0"},
+				"west": {"uv": [2, 9, 4, 11], "texture": "#layer0"},
+				"down": {"uv": [0, 11, 1, 13], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "3",
+			"from": [7, 5, 7],
+			"to": [11, 7, 9],
+			"faces": {
+				"north": {"uv": [4, 5, 8, 7], "texture": "#layer0"},
+				"east": {"uv": [6, 7, 8, 9], "texture": "#layer0"},
+				"south": {"uv": [8, 5, 12, 7], "texture": "#layer0"},
+				"west": {"uv": [4, 7, 6, 9], "texture": "#layer0"},
+				"up": {"uv": [8, 7, 12, 9], "texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, -180, 0],
+			"translation": [0, 3.5, 3.25],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [45, -180, 0],
+			"translation": [0, 3.5, 3.25],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -180, 0],
+			"translation": [-2, 7.75, 3],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"translation": [-2, 7.75, 3],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"ground": {
+			"translation": [0, 3.5, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [20, 145, 0],
+			"translation": [0, 3.25, 0]
+		},
+		"head": {
+			"translation": [0, 14.25, 5.5]
+		},
+		"fixed": {
+			"translation": [0, 7.25, -1.75],
+			"scale": [1.75, 1.75, 1.75]
+		}
+	},
+	"groups": [
+		{
+			"name": "raw_meat",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

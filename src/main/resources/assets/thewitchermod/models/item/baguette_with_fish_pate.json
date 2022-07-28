@@ -1,0 +1,59 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "tw3pack:items/food/baguette_with_fish_pate_w3eat",
+		"layer0": "tw3pack:items/food/baguette_with_fish_pate_w3eat"
+	},
+	"elements": [
+		{
+			"name": "1",
+			"from": [-3, 0, 10],
+			"to": [4, 2, 12],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 5, 7, 9], "texture": "#layer0"},
+				"east": {"uv": [0, 5, 3, 9], "texture": "#layer0"},
+				"south": {"uv": [0, 2, 7, 6], "texture": "#layer0"},
+				"west": {"uv": [3, 2, 6, 6], "texture": "#layer0"},
+				"up": {"uv": [0, 8, 14, 12], "texture": "#layer0"},
+				"down": {"uv": [0, 8, 14, 12], "texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [69, -27, 0],
+			"translation": [0, 3, 6.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [69, -27, 0],
+			"translation": [0, 3, 6.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -27, 0],
+			"translation": [-1.75, 11, 4.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -27, 0],
+			"translation": [-1.75, 11, 4.5]
+		},
+		"ground": {
+			"translation": [0, 4.5, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"gui": {
+			"rotation": [30, 0, 0],
+			"translation": [0, 7, 0],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"head": {
+			"translation": [0, 14.5, 6.5]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -16.25],
+			"scale": [2, 2, 2]
+		}
+	}
+}
