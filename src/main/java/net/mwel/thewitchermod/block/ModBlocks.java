@@ -16,6 +16,7 @@ import net.mwel.thewitchermod.item.ModItemGroup;
 public class ModBlocks {
 
     //  Wild Bushes
+    public static final Block arenaria_bush = registerBlock("arenaria_bush", new ArenariaBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block crows_eye_bush = registerBlock("crows_eye_bush", new CrowsEyeBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block celandine_bush = registerBlock("celandine_bush", new CelandineBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block fools_parsley_bush = registerBlock("fools_parsley_bush", new FoolsParsleyBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
@@ -34,9 +35,9 @@ public class ModBlocks {
     public static final Block hellebore_petals_crop = registerBlockWithoutItem("hellebore_petals_crop", new HelleborePetalsCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
 
-//    Mushrooms
+//    Other
     public static final Block cortinarius_mushroom = registerBlockWithoutItem("cortinarius_mushroom", new CortinariusMushroomPlant(AbstractBlock.Settings.of(Material.PLANT, MapColor.BROWN).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS)));
-
+    public static final Block nostrix_wall_plant = registerBlock("nostrix_wall_plant", new NostrixWallPlant(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().strength(0.2f)), ModItemGroup.THE_WITCHER);
 
 
 
