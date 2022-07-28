@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/raspberry_juice_w3eat",
-		"particle": "tw3pack:items/food/raspberry_juice_w3eat"
+		"0": "thewitchermod:item/raspberry_juice",
+		"particle": "thewitchermod:item/raspberry_juice"
 	},
 	"elements": [
 		{
@@ -273,23 +273,31 @@
 			"name": "raspberry_juice",
 			"origin": [8, 8, 8],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [
 				{
 					"name": "1",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [0, 1, 2]
 				},
 				{
 					"name": "2",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [3, 4, 5, 6]
 				},
 				{
 					"name": "3",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 				}
 			]

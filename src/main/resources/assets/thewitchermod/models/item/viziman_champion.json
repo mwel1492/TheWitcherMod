@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/viziman_champion_w3eat",
-		"particle": "tw3pack:items/food/viziman_champion_w3eat"
+		"0": "thewitchermod:item/viziman_champion",
+		"particle": "thewitchermod:item/viziman_champion"
 	},
 	"elements": [
 		{
@@ -183,6 +183,8 @@
 			"name": "viziman_champion",
 			"origin": [8, 8, 8],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 		}
 	]

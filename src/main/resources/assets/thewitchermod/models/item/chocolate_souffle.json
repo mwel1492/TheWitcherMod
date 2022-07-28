@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "tw3pack:items/food/chocolate_souffle_w3eat",
-		"particle": "tw3pack:items/food/chocolate_souffle_w3eat"
+		"0": "thewitchermod:item/chocolate_souffle",
+		"particle": "thewitchermod:item/chocolate_souffle"
 	},
 	"elements": [
 		{
@@ -85,6 +85,8 @@
 			"name": "1",
 			"origin": [7, 3.25, 7.5],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2]
 		}
 	]

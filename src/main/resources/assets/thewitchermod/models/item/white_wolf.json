@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/white_wolf_w3eat",
-		"particle": "tw3pack:items/food/white_wolf_w3eat"
+		"0": "thewitchermod:item/white_wolf",
+		"particle": "thewitchermod:item/white_wolf"
 	},
 	"elements": [
 		{
@@ -89,6 +89,8 @@
 			"name": "white_wolf",
 			"origin": [7.1, 10, 8.1],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2]
 		}
 	]
