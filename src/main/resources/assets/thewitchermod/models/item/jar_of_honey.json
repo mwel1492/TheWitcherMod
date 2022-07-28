@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/jar_of_honey_w3eat",
-		"layer0": "tw3pack:items/food/jar_of_honey_w3eat"
+		"particle": "thewitchermod:item/jar_of_honey",
+		"layer0": "thewitchermod:item/jar_of_honey"
 	},
 	"elements": [
 		{
@@ -126,6 +126,8 @@
 			"name": "1",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2, 3, 4, 5]
 		}
 	]

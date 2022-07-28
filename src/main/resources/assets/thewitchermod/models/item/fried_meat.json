@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/fried_meat_w3eat",
-		"layer0": "tw3pack:items/food/fried_meat_w3eat"
+		"particle": "thewitchermod:item/fried_meat",
+		"layer0": "thewitchermod:item/fried_meat"
 	},
 	"elements": [
 		{
@@ -86,6 +86,8 @@
 			"name": "fried_meat",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2]
 		}
 	]

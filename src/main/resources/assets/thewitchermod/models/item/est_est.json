@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/est_est_w3eat",
-		"particle": "tw3pack:items/food/est_est_w3eat"
+		"0": "thewitchermod:item/est_est",
+		"particle": "thewitchermod:item/est_est"
 	},
 	"elements": [
 		{
@@ -87,6 +87,8 @@
 			"name": "est_est",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2]
 		}
 	]

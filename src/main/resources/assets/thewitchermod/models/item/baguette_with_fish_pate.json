@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/baguette_with_fish_pate_w3eat",
-		"layer0": "tw3pack:items/food/baguette_with_fish_pate_w3eat"
+		"particle": "thewitchermod:item/baguette_with_fish_pate",
+		"layer0": "thewitchermod:item/baguette_with_fish_pate"
 	},
 	"elements": [
 		{

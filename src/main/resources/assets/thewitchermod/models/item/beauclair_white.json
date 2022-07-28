@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/beauclair_white_w3eat",
-		"particle": "tw3pack:items/food/beauclair_white_w3eat"
+		"0": "thewitchermod:item/beauclair_white",
+		"particle": "thewitchermod:item/beauclair_white"
 	},
 	"elements": [
 		{
@@ -144,11 +144,19 @@
 			"name": "beauclair_white",
 			"origin": [7.1, 10, 8.1],
 			"color": 0,
-			"children": [0, 1, 2, 3,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
+			"children": [
+				0,
+				1,
+				2,
+				3,
 				{
 					"name": "handle",
 					"origin": [7.5, 4.6, 5.4],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [4, 5, 6]
 				}
 			]

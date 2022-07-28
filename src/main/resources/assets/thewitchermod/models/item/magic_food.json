@@ -1,13 +1,13 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "tw3pack:items/food/strawberries_w3eat",
-		"2": "tw3pack:items/food/grapes_w3eat",
-		"3": "tw3pack:items/food/pear_w3eat",
-		"4": "tw3pack:items/food/poisoned_apple_w3eat",
-		"5": "tw3pack:items/food/banana_w3eat",
-		"particle": "tw3pack:items/food/magic_food_w3eat",
-		"layer0": "tw3pack:items/food/magic_food_w3eat"
+		"1": "thewitchermod:item/strawberries",
+		"2": "thewitchermod:item/grapes",
+		"3": "thewitchermod:item/pear",
+		"4": "thewitchermod:item/poisoned_apple",
+		"5": "thewitchermod:item/banana",
+		"particle": "thewitchermod:item/magic_food",
+		"layer0": "thewitchermod:item/magic_food"
 	},
 	"elements": [
 		{
@@ -557,34 +557,6 @@
 			}
 		},
 		{
-			"name": "2",
-			"from": [9.271, 1.823, 7.332],
-			"to": [9.781, 2.231, 7.74],
-			"rotation": {"angle": 45, "axis": "z", "origin": [8, 0.833, 8.136]},
-			"faces": {
-				"north": {"uv": [8, 0, 10, 2.5], "rotation": 270, "texture": "#5"},
-				"east": {"uv": [8, 2.5, 10, 4.5], "texture": "#5"},
-				"south": {"uv": [10, 0, 12, 2.5], "rotation": 90, "texture": "#5"},
-				"west": {"uv": [10, 2.5, 12, 4.5], "rotation": 180, "texture": "#5"},
-				"up": {"uv": [14, 0, 16, 2.5], "rotation": 90, "texture": "#5"},
-				"down": {"uv": [12, 0, 14, 2.5], "rotation": 90, "texture": "#5"}
-			}
-		},
-		{
-			"name": "3",
-			"from": [8.047, 1.823, 7.332],
-			"to": [8.455, 2.231, 7.74],
-			"rotation": {"angle": 45, "axis": "z", "origin": [8, 0.833, 8.136]},
-			"faces": {
-				"north": {"uv": [2, 2, 4, 4], "rotation": 270, "texture": "#5"},
-				"east": {"uv": [8, 2.5, 10, 4.5], "texture": "#5"},
-				"south": {"uv": [6, 2, 8, 4], "rotation": 90, "texture": "#5"},
-				"west": {"uv": [10, 2.5, 12, 4.5], "rotation": 180, "texture": "#5"},
-				"up": {"uv": [0, 2, 2, 4], "rotation": 90, "texture": "#5"},
-				"down": {"uv": [4, 2, 6, 4], "rotation": 90, "texture": "#5"}
-			}
-		},
-		{
 			"name": "4",
 			"from": [8.455, 1.721, 7.332],
 			"to": [9.271, 2.129, 7.74],
@@ -610,6 +582,34 @@
 				"west": {"uv": [8, 2.5, 10, 4.5], "texture": "#5"},
 				"up": {"uv": [14, 0, 16, 2.5], "rotation": 270, "texture": "#5"},
 				"down": {"uv": [12, 0, 14, 2.5], "rotation": 270, "texture": "#5"}
+			}
+		},
+		{
+			"name": "2",
+			"from": [9.271, 1.823, 7.332],
+			"to": [9.781, 2.231, 7.74],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 0.833, 8.136]},
+			"faces": {
+				"north": {"uv": [8, 0, 10, 2.5], "rotation": 270, "texture": "#5"},
+				"east": {"uv": [8, 2.5, 10, 4.5], "texture": "#5"},
+				"south": {"uv": [10, 0, 12, 2.5], "rotation": 90, "texture": "#5"},
+				"west": {"uv": [10, 2.5, 12, 4.5], "rotation": 180, "texture": "#5"},
+				"up": {"uv": [14, 0, 16, 2.5], "rotation": 90, "texture": "#5"},
+				"down": {"uv": [12, 0, 14, 2.5], "rotation": 90, "texture": "#5"}
+			}
+		},
+		{
+			"name": "3",
+			"from": [8.047, 1.823, 7.332],
+			"to": [8.455, 2.231, 7.74],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 0.833, 8.136]},
+			"faces": {
+				"north": {"uv": [2, 2, 4, 4], "rotation": 270, "texture": "#5"},
+				"east": {"uv": [8, 2.5, 10, 4.5], "texture": "#5"},
+				"south": {"uv": [6, 2, 8, 4], "rotation": 90, "texture": "#5"},
+				"west": {"uv": [10, 2.5, 12, 4.5], "rotation": 180, "texture": "#5"},
+				"up": {"uv": [0, 2, 2, 4], "rotation": 90, "texture": "#5"},
+				"down": {"uv": [4, 2, 6, 4], "rotation": 90, "texture": "#5"}
 			}
 		},
 		{
@@ -738,23 +738,31 @@
 			"name": "str",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 		},
 		{
 			"name": "grapes",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [
 				{
 					"name": "1",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
 				},
 				{
 					"name": "2",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [25, 26, 27]
 				}
 			]
@@ -763,24 +771,32 @@
 			"name": "pear",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [28, 29, 30]
 		},
 		{
 			"name": "papple",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [31, 32, 33, 34, 35, 36]
 		},
 		{
 			"name": "banana",
 			"origin": [0, 0, 0],
 			"color": 0,
-			"children": [37, 38, 41, 42, 39, 40]
+			"nbt": "{}",
+			"armAnimationEnabled": false,
+			"children": [37, 38, 39, 40, 41, 42]
 		},
 		{
 			"name": "banana",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [43, 44, 45, 46, 47, 48]
 		}
 	]

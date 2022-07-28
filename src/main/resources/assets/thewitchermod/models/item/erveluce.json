@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/erveluce_w3eat",
-		"particle": "tw3pack:items/food/erveluce_w3eat"
+		"0": "thewitchermod:item/erveluce",
+		"particle": "thewitchermod:item/erveluce"
 	},
 	"elements": [
 		{
@@ -116,6 +116,8 @@
 			"name": "erveluce",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2, 3, 4]
 		}
 	]

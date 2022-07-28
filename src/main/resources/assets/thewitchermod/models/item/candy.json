@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/candy_w3eat",
-		"layer0": "tw3pack:items/food/candy_w3eat"
+		"particle": "thewitchermod:item/candy",
+		"layer0": "thewitchermod:item/candy"
 	},
 	"elements": [
 		{

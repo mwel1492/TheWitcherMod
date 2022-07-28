@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/burned_sweet_bun_w3eat",
-		"layer0": "tw3pack:items/food/burned_sweet_bun_w3eat"
+		"particle": "thewitchermod:item/burned_sweet_bun",
+		"layer0": "thewitchermod:item/burned_sweet_bun"
 	},
 	"elements": [
 		{
@@ -75,6 +75,8 @@
 			"name": "1",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1]
 		}
 	]

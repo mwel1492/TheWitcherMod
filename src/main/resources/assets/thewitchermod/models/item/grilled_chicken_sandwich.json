@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/grilled_chicken_sandwich_w3eat",
-		"layer0": "tw3pack:items/food/grilled_chicken_sandwich_w3eat"
+		"particle": "thewitchermod:item/grilled_chicken_sandwich",
+		"layer0": "thewitchermod:item/grilled_chicken_sandwich"
 	},
 	"elements": [
 		{
@@ -74,6 +74,8 @@
 			"name": "chicken_sandwich",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1]
 		}
 	]

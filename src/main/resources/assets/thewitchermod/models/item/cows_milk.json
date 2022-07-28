@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/cows_milk_w3eat",
-		"particle": "tw3pack:items/food/cows_milk_w3eat"
+		"0": "thewitchermod:item/cows_milk",
+		"particle": "thewitchermod:item/cows_milk"
 	},
 	"elements": [
 		{
@@ -323,23 +323,32 @@
 			"name": "cows_milk",
 			"origin": [0, 0, 0],
 			"color": 0,
-			"children": [0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
+			"children": [
+				0,
 				{
 					"name": "top",
 					"origin": [5, 8, 0.5],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 				},
 				{
 					"name": "misc",
 					"origin": [7, 6, 7],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [11, 12, 13, 14]
 				},
 				{
 					"name": "handle",
 					"origin": [7, 1, 12],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [15, 16, 17, 18, 19]
 				}
 			]

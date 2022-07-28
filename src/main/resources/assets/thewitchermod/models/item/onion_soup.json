@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "tw3pack:items/food/onion_w3eat",
-		"layer0": "tw3pack:items/food/onion_soup_w3eat",
-		"particle": "tw3pack:items/food/onion_w3eat"
+		"1": "thewitchermod:item/onion",
+		"particle": "thewitchermod:item/onion",
+		"layer0": "thewitchermod:item/onion_soup"
 	},
 	"elements": [
 		{
@@ -159,12 +159,16 @@
 			"name": "bowl",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2, 3, 4]
 		},
 		{
 			"name": "onion",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [5, 6, 7]
 		}
 	]

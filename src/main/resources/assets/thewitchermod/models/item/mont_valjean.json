@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/mont_valjean_w3eat",
-		"particle": "tw3pack:items/food/mont_valjean_w3eat"
+		"0": "thewitchermod:item/mont_valjean",
+		"particle": "thewitchermod:item/mont_valjean"
 	},
 	"elements": [
 		{
@@ -102,6 +102,8 @@
 			"name": "mont_valjean",
 			"origin": [7.1, 10, 8.1],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2, 3]
 		}
 	]

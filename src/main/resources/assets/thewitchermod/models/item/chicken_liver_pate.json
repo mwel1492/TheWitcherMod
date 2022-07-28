@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/chicken_liver_pate_w3eat",
-		"layer0": "tw3pack:items/food/chicken_liver_pate_w3eat"
+		"particle": "thewitchermod:item/chicken_liver_pate",
+		"layer0": "thewitchermod:item/chicken_liver_pate"
 	},
 	"elements": [
 		{

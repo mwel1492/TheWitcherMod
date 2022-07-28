@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "tw3pack:items/food/fish_tart_w3eat2",
-		"particle": "tw3pack:items/food/fish_tart_w3eat",
-		"layer0": "tw3pack:items/food/fish_tart_w3eat"
+		"1": "thewitchermod:item/fish_tart_",
+		"particle": "thewitchermod:item/fish_tart",
+		"layer0": "thewitchermod:item/fish_tart"
 	},
 	"elements": [
 		{
@@ -240,12 +240,16 @@
 			"name": "0",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2, 3, 4]
 		},
 		{
 			"name": "1",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [5, 6, 7, 8, 9, 10, 11, 12, 13]
 		}
 	]

@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/butcher_of_blaviken_w3eat",
-		"particle": "tw3pack:items/food/butcher_of_blaviken_w3eat"
+		"0": "thewitchermod:item/butcher_of_blaviken",
+		"particle": "thewitchermod:item/butcher_of_blaviken"
 	},
 	"elements": [
 		{
@@ -90,6 +90,8 @@
 			"name": "bob",
 			"origin": [7.1, 10, 8.1],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2]
 		}
 	]

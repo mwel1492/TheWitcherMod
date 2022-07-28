@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/cucumber_w3eat",
-		"layer0": "tw3pack:items/food/cucumber_w3eat"
+		"particle": "thewitchermod:item/cucumber",
+		"layer0": "thewitchermod:item/cucumber"
 	},
 	"elements": [
 		{

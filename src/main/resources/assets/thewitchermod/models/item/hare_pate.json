@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/hare_pate_w3eat",
-		"layer0": "tw3pack:items/food/hare_pate_w3eat"
+		"particle": "thewitchermod:item/hare_pate",
+		"layer0": "thewitchermod:item/hare_pate"
 	},
 	"elements": [
 		{

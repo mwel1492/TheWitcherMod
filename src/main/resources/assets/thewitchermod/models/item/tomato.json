@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/tomato_w3eat",
-		"layer0": "tw3pack:items/food/tomato_w3eat"
+		"particle": "thewitchermod:item/tomato",
+		"layer0": "thewitchermod:item/tomato"
 	},
 	"elements": [
 		{
@@ -83,6 +83,8 @@
 			"name": "1",
 			"origin": [1.5, 2.5, 1.5],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2]
 		}
 	]

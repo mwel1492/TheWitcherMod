@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/kaedweni_stout_w3eat",
-		"particle": "tw3pack:items/food/kaedweni_stout_w3eat"
+		"0": "thewitchermod:item/kaedweni_stout",
+		"particle": "thewitchermod:item/kaedweni_stout"
 	},
 	"elements": [
 		{
@@ -183,6 +183,8 @@
 			"name": "kaedweni_stout",
 			"origin": [8, 8, 8],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 		}
 	]

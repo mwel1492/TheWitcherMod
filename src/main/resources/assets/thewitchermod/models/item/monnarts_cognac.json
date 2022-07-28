@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/monnarts_cognac_w3eat",
-		"particle": "tw3pack:items/food/monnarts_cognac_w3eat"
+		"0": "thewitchermod:item/monnarts_cognac",
+		"particle": "thewitchermod:item/monnarts_cognac"
 	},
 	"elements": [
 		{
@@ -116,6 +116,8 @@
 			"name": "monnarts_cognac",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2, 3, 4]
 		}
 	]

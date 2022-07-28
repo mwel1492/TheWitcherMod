@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/dried_fruit_w3eat",
-		"layer0": "tw3pack:items/food/dried_fruit_w3eat"
+		"particle": "thewitchermod:item/dried_fruit",
+		"layer0": "thewitchermod:item/dried_fruit"
 	},
 	"elements": [
 		{
@@ -147,6 +147,8 @@
 			"name": "1",
 			"origin": [8, 8, 8],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [
 				0,
 				1,
@@ -155,6 +157,8 @@
 					"name": "4",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [3, 4]
 				},
 				5,

@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "tw3pack:items/food/gutted_fish_w3eat",
-		"particle": "tw3pack:items/food/gutted_fish_w3eat"
+		"0": "thewitchermod:item/gutted_fish",
+		"particle": "thewitchermod:item/gutted_fish"
 	},
 	"elements": [
 		{
@@ -129,17 +129,23 @@
 			"name": "1",
 			"origin": [8, 8, 8],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [
 				{
 					"name": "1",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [0, 1, 2]
 				},
 				{
 					"name": "2",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [3, 4, 5]
 				}
 			]

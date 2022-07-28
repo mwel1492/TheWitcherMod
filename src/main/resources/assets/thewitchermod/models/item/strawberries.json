@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tw3pack:items/food/strawberries_w3eat",
-		"layer0": "tw3pack:items/food/strawberries_w3eat"
+		"particle": "thewitchermod:item/strawberries",
+		"layer0": "thewitchermod:item/strawberries"
 	},
 	"elements": [
 		{
@@ -318,17 +318,23 @@
 			"name": "1",
 			"origin": [8, 8, 8],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [
 				{
 					"name": "1",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [0, 1, 2, 3, 4]
 				},
 				{
 					"name": "2",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": false,
 					"children": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
 				}
 			]

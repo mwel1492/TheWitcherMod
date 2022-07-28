@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "potion",
 	"textures": {
-		"0": "tw3pack:items/food/geralt_of_rivia_w3eat",
-		"particle": "tw3pack:items/food/geralt_of_rivia_w3eat"
+		"0": "thewitchermod:item/geralt_of_rivia",
+		"particle": "thewitchermod:item/geralt_of_rivia"
 	},
 	"elements": [
 		{
@@ -102,6 +102,8 @@
 			"name": "geralt_of_rivia",
 			"origin": [7.1, 10, 8.1],
 			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": false,
 			"children": [0, 1, 2, 3]
 		}
 	]
