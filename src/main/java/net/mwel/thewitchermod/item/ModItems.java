@@ -403,6 +403,11 @@ public class ModItems{
 
 
 
+
+    public static final Item diagram_test = registerItem("diagram_test", new DiagramCommonItem(new FabricItemSettings().maxCount(1).group(ModItemGroup.THE_WITCHER)));
+
+
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(TheWitcherMod.MOD_ID, name), item);
     }

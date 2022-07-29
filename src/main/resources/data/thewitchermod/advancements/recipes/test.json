@@ -1,0 +1,21 @@
+{
+  "parent": "thewitchermod:recipes/root",
+  "criteria": {
+    "diagram_test": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "thewitchermod:diagram_test"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "minecraft:acacia_boat"
+    ],
+    "experience": 5
+  }
+}

@@ -16,7 +16,7 @@ public class KeyInputHandler {
     public static void registerKeyInputs(){
                    ClientTickEvents.END_CLIENT_TICK.register(client -> {
                        if(openguikey.wasPressed()){
-                           client.player.sendChatMessage("R key was pressed");
+                           return;
            }
         });
     }
