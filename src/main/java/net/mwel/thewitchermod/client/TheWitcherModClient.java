@@ -31,7 +31,9 @@ public class TheWitcherModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.hellebore_petals_crop, RenderLayer.getCutout());
 
 //        Other Renderer
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.puffball_mushroom, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.cortinarius_mushroom, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.longrube_mushroom, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.nostrix_wall_plant, RenderLayer.getCutout());
 
 

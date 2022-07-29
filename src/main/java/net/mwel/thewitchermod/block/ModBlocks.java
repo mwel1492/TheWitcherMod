@@ -36,6 +36,8 @@ public class ModBlocks {
 
 
 //    Other
+    public static final Block puffball_mushroom = registerBlockWithoutItem("puffball_mushroom", new PuffballMushroomPlant(AbstractBlock.Settings.of(Material.PLANT, MapColor.BROWN).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS)));
+    public static final Block longrube_mushroom = registerBlockWithoutItem("longrube_mushroom", new LongrubeMushroomPlant(AbstractBlock.Settings.of(Material.PLANT, MapColor.BROWN).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS)));
     public static final Block cortinarius_mushroom = registerBlockWithoutItem("cortinarius_mushroom", new CortinariusMushroomPlant(AbstractBlock.Settings.of(Material.PLANT, MapColor.BROWN).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS)));
     public static final Block nostrix_wall_plant = registerBlock("nostrix_wall_plant", new NostrixWallPlant(FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().nonOpaque().strength(0.2f)), ModItemGroup.THE_WITCHER);
 

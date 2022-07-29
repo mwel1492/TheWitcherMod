@@ -1,13 +1,11 @@
 package net.mwel.thewitchermod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.client.render.entity.model.WitchEntityModel;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.mwel.thewitchermod.TheWitcherMod;
 import net.mwel.thewitchermod.block.ModBlocks;
-import net.mwel.thewitchermod.item.type.AliasedCommonModBlockItem;
 import net.mwel.thewitchermod.item.type.*;
 
 
@@ -169,7 +167,7 @@ public class ModItems{
     public static final Item light_essence = registerItem("light_essence", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item linen = registerItem("linen", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item lock_of_lamia_hair = registerItem("lock_of_lamia_hair", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item longrube = registerItem("longrube", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item longrube = registerItem("longrube", new AliasedCommonModBlockItem(ModBlocks.longrube_mushroom, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item lunar_shards = registerItem("lunar_shards", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item mahakaman_spirit = registerItem("mahakaman_spirit", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item malachite = registerItem("malachite", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
@@ -236,7 +234,7 @@ public class ModItems{
     public static final Item powdered_monster_tissue = registerItem("powdered_monster_tissue", new RelicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item powdered_pearl = registerItem("powdered_pearl", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item pringrape = registerItem("pringrape", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item puffball = registerItem("puffball", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item puffball = registerItem("puffball", new AliasedCommonModBlockItem(ModBlocks.puffball_mushroom, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item quebrith = registerItem("quebrith", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item quicksilver_solution = registerItem("quicksilver_solution", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item ranogrin = registerItem("ranogrin", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
@@ -299,7 +297,6 @@ public class ModItems{
     public static final Item wyvern_egg = registerItem("wyvern_egg", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item wyvern_hide = registerItem("wyvern_hide", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item zerrikanian_powder = registerItem("zerrikanian_powder", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-
 
     public static final Item apple = registerItem("apple", new CommonItem(new FabricItemSettings().food(ModFoodComponent.apple).group(ModItemGroup.THE_WITCHER)));
     public static final Item apple_juice = registerItem("apple_juice", new CommonItem(new FabricItemSettings().food(ModFoodComponent.apple_juice).group(ModItemGroup.THE_WITCHER)));

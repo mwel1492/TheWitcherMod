@@ -104,6 +104,6 @@ public class ModFoodComponent {
     public static final FoodComponent vinegar = new FoodComponent.Builder().hunger(4).saturationModifier(0.4f).build();
     public static final FoodComponent viziman_champion = new FoodComponent.Builder().hunger(4).saturationModifier(0.4f).build();
     public static final FoodComponent water = new FoodComponent.Builder().hunger(4).saturationModifier(0.4f).build();
-    public static final FoodComponent white_wolf = new FoodComponent.Builder().hunger(4).saturationModifier(0.4f).build();
+    public static final FoodComponent white_wolf = new FoodComponent.Builder().hunger(4).saturationModifier(0.4f).alwaysEdible().build();
 
 }
