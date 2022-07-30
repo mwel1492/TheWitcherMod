@@ -12,6 +12,7 @@ import net.minecraft.util.registry.Registry;
 import net.mwel.thewitchermod.TheWitcherMod;
 import net.mwel.thewitchermod.block.custom.*;
 import net.mwel.thewitchermod.item.ModItemGroup;
+import org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter;
 
 public class ModBlocks {
 
@@ -23,6 +24,7 @@ public class ModBlocks {
     public static final Block hop_umbels_bush = registerBlock("hop_umbels_bush", new HopUmbelsBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block han_fiber_bush = registerBlock("han_fiber_bush", new HanFiberBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block hellebore_petals_bush = registerBlock("hellebore_petals_bush", new HelleborePetalsBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
+    public static final Block honeysuckle_bush = registerBlock("honeysuckle_bush", new HoneysuckleBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
 
 
     // Crop Blocks
@@ -40,6 +42,7 @@ public class ModBlocks {
     public static final Block longrube_mushroom = registerBlockWithoutItem("longrube_mushroom", new LongrubeMushroomPlant(AbstractBlock.Settings.of(Material.PLANT, MapColor.BROWN).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS)));
     public static final Block cortinarius_mushroom = registerBlockWithoutItem("cortinarius_mushroom", new CortinariusMushroomPlant(AbstractBlock.Settings.of(Material.PLANT, MapColor.BROWN).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS)));
     public static final Block nostrix_wall_plant = registerBlock("nostrix_wall_plant", new NostrixWallPlant(FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().nonOpaque().strength(0.2f)), ModItemGroup.THE_WITCHER);
+    public static final Block green_mold_wall_plant = registerBlockWithoutItem("green_mold_wall_plant", new GreenMoldWallPlant(FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().nonOpaque().strength(0.2f)));
 
 
 

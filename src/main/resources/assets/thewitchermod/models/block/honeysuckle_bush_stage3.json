@@ -1,0 +1,6 @@
+{
+  "parent": "thewitchermod:block/crop_medium",
+  "textures": {
+    "crop": "thewitchermod:block/honeysuckle_bush_stage3"
+  }
+}

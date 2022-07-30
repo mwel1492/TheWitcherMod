@@ -21,6 +21,8 @@ public class TheWitcherModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.hop_umbels_bush, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.han_fiber_bush, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.hellebore_petals_bush, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.honeysuckle_bush, RenderLayer.getCutout());
+
 
 //        Crop Block Renderer
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.crows_eye_crop, RenderLayer.getCutout());
@@ -35,6 +37,7 @@ public class TheWitcherModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.cortinarius_mushroom, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.longrube_mushroom, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.nostrix_wall_plant, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.green_mold_wall_plant, RenderLayer.getCutout());
 
 
     }

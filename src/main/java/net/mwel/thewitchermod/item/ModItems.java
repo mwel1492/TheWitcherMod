@@ -137,7 +137,7 @@ public class ModItems{
     public static final Item green_gold_ingot = registerItem("green_gold_ingot", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item green_gold_ore = registerItem("green_gold_ore", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item green_gold_plate = registerItem("green_gold_plate", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item green_mold = registerItem("green_mold", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item green_mold = registerItem("green_mold", new AliasedCommonModBlockItem(ModBlocks.green_mold_wall_plant, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item griffin_feathers = registerItem("griffin_feathers", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item griffins_egg = registerItem("griffins_egg", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item han_fiber = registerItem("han_fiber", new AliasedCommonModBlockItem(ModBlocks.han_fiber_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));

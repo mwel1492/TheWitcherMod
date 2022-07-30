@@ -1,0 +1,6 @@
+{
+	"parent": "thewitchermod:block/wall_plant",
+	"textures": {
+		"wall_plant": "thewitchermod:block/green_mold_wall_plant_stage3"
+	}
+}

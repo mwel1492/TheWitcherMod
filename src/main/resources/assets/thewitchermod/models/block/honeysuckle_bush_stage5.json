@@ -1,0 +1,6 @@
+{
+  "parent": "thewitchermod:block/crop_large",
+  "textures": {
+    "crop": "thewitchermod:block/honeysuckle_bush_stage5"
+  }
+}
