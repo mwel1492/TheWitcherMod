@@ -25,11 +25,14 @@ public class CortinariusMushroomPlant extends PlantBlock{
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         if (random.nextInt(15) == 0) {
+
+//            if there're 4 mushrooms in the 9x3x9 area it wont spawn any more mushrooms in that area
             int i = 5;
             for (BlockPos blockPos : BlockPos.iterate(pos.add(-4, -1, -4), pos.add(4, 1, 4))) {
                 if (!world.getBlockState(blockPos).isOf(this) || --i > 0) continue;
                 return;
             }
+//          Tries to choose a spot for a new mushroom to generate in 9x3x9 area
             BlockPos blockPos2 = pos.add(random.nextInt(3) - 1, random.nextInt(2) - random.nextInt(2), random.nextInt(3) - 1);
             for (int k = 0; k < 4; ++k) {
                 if (world.isAir(blockPos2) && state.canPlaceAt(world, blockPos2)) {
@@ -37,6 +40,7 @@ public class CortinariusMushroomPlant extends PlantBlock{
                 }
                 blockPos2 = pos.add(random.nextInt(3) - 1, random.nextInt(2) - random.nextInt(2), random.nextInt(3) - 1);
             }
+//            If Both requirements are met = generate new mushroom
             if (world.isAir(blockPos2) && state.canPlaceAt(world, blockPos2)) {
                 world.setBlockState(blockPos2, state, Block.NOTIFY_LISTENERS);
             }

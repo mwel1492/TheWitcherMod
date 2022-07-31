@@ -77,9 +77,8 @@ public class HanFiberBushBlock extends PlantBlock {
 
         @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 7;
+        boolean  bl = i == 7;
         if (i > 6) {
             int j = world.random.nextBetween(1,5);
             HanFiberBushBlock.dropStack(world, pos, new ItemStack(ModItems.han_fiber, j + (bl ? 1 : 0)));

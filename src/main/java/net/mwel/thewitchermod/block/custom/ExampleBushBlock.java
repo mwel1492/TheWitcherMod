@@ -92,10 +92,9 @@ public static final IntProperty AGE = IntProperty.of("age", 0, 3);
 //    Заменяет дроп предмета с блока
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        boolean bl;
         int i = state.get(AGE);
 //        Вписать максимальную стадию росать
-        boolean bl2 = bl = i == 5;
+        boolean bl = i == 5;
 //        Вписать предпоследнюю стадию роста AGE
         if (i > 2) {
             // Кол-во дропа

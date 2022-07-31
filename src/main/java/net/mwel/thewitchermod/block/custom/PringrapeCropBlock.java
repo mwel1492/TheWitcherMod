@@ -22,8 +22,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import net.mwel.thewitchermod.item.ModItems;
 
-public class FoolsParsleyCropBlock extends CropBlock {
-    public FoolsParsleyCropBlock(Settings settings) {
+public class PringrapeCropBlock extends CropBlock {
+    public PringrapeCropBlock(Settings settings) {
         super(settings);
     }
 
@@ -49,7 +49,7 @@ public class FoolsParsleyCropBlock extends CropBlock {
         }
         if (i > 2) {
             int j = world.random.nextBetween(1,3);
-            FoolsParsleyCropBlock.dropStack(world, pos, new ItemStack(ModItems.fools_parsley_leaves, j + (bl ? 1 : 0)));
+            CelandineBushBlock.dropStack(world, pos, new ItemStack(ModItems.pringrape, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.ITEM_CROP_PLANT, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
             BlockState blockState = state.with(AGE, 1);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
@@ -62,7 +62,7 @@ public class FoolsParsleyCropBlock extends CropBlock {
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItems.fools_parsley_leaves;
+        return ModItems.pringrape;
     }
 
     @Override

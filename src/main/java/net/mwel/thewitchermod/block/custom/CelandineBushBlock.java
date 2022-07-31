@@ -73,9 +73,8 @@ public class CelandineBushBlock extends PlantBlock {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 3;
+        boolean bl = i == 3;
         if (i > 2) {
             int j = world.random.nextBetween(1,3);
             CelandineBushBlock.dropStack(world, pos, new ItemStack(ModItems.celandine, j + (bl ? 1 : 0)));

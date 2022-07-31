@@ -73,9 +73,8 @@ public class HoneysuckleBushBlock extends PlantBlock {
 
         @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 6;
+        boolean bl = i == 6;
         if (i > 5) {
             int j = world.random.nextBetween(1,5);
             HoneysuckleBushBlock.dropStack(world, pos, new ItemStack(ModItems.honeysuckle, j + (bl ? 1 : 0)));

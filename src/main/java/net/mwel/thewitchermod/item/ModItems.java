@@ -233,7 +233,7 @@ public class ModItems{
     public static final Item phosphorus = registerItem("phosphorus", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item powdered_monster_tissue = registerItem("powdered_monster_tissue", new RelicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item powdered_pearl = registerItem("powdered_pearl", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item pringrape = registerItem("pringrape", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item pringrape = registerItem("pringrape", new AliasedCommonModBlockItem(ModBlocks.pringrape_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item puffball = registerItem("puffball", new AliasedCommonModBlockItem(ModBlocks.puffball_mushroom, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item quebrith = registerItem("quebrith", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item quicksilver_solution = registerItem("quicksilver_solution", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));

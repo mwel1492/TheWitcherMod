@@ -70,9 +70,8 @@ public class HelleborePetalsBushBlock extends PlantBlock {
     }
 
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 4;
+        boolean bl = i == 4;
         if (i > 3) {
             int j = world.random.nextBetween(1,4);
             HelleborePetalsBushBlock.dropStack(world, pos, new ItemStack(ModItems.hellebore_petals, j + (bl ? 1 : 0)));

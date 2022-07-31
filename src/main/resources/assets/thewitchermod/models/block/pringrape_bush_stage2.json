@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "thewitchermod:block/pringrape_bush_stage2"
+  }
+}

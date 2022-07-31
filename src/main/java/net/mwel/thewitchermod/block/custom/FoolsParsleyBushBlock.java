@@ -73,9 +73,8 @@ public class FoolsParsleyBushBlock extends PlantBlock {
 
         @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 5;
+        boolean bl = i == 5;
         if (i > 4) {
             int j = world.random.nextBetween(1,4);
             FoolsParsleyBushBlock.dropStack(world, pos, new ItemStack(ModItems.fools_parsley_leaves, j + (bl ? 1 : 0)));

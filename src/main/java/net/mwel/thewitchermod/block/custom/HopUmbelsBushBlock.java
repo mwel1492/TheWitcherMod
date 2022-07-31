@@ -75,9 +75,8 @@ public class HopUmbelsBushBlock extends PlantBlock {
 
         @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        boolean bl;
         int i = state.get(AGE);
-        boolean bl2 = bl = i == 7;
+        boolean bl = i == 7;
         if (i > 6) {
             int j = world.random.nextBetween(2,6);
             HopUmbelsBushBlock.dropStack(world, pos, new ItemStack(ModItems.hop_umbels, j + (bl ? 1 : 0)));
