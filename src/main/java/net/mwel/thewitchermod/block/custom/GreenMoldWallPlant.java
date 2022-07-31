@@ -30,7 +30,6 @@ import net.mwel.thewitchermod.item.ModItems;
 
 
 public class GreenMoldWallPlant extends MultifaceGrowthBlock implements Fertilizable {
-    private static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
     private final LichenGrower grower = new LichenGrower(this);
 
     public GreenMoldWallPlant(Settings settings) {
@@ -91,11 +90,6 @@ public class GreenMoldWallPlant extends MultifaceGrowthBlock implements Fertiliz
     @Override
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
-    }
-
-    @Override
-    public boolean canReplace(BlockState state, ItemPlacementContext context) {
-        return !context.getStack().isOf(Items.GLOW_LICHEN) || super.canReplace(state, context);
     }
 
     @Override

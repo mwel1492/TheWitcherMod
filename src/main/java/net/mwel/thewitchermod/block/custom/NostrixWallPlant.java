@@ -97,12 +97,7 @@ public class NostrixWallPlant extends MultifaceGrowthBlock implements Fertilizab
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
     }
 
-    @Override
-    public boolean canReplace(BlockState state, ItemPlacementContext context) {
-        return !context.getStack().isOf(Items.GLOW_LICHEN) || super.canReplace(state, context);
-    }
-
-    @Override
+       @Override
     public boolean isFertilizable(BlockView world, BlockPos pos, BlockState state, boolean isClient) {
         return Direction.stream().anyMatch(direction -> this.grower.canGrow(state, world, pos, direction.getOpposite()));
     }
