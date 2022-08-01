@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "thewitchermod:block/ranogrin_bush_stage0"
+  }
+}

@@ -237,7 +237,7 @@ public class ModItems{
     public static final Item puffball = registerItem("puffball", new AliasedCommonModBlockItem(ModBlocks.puffball_mushroom, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item quebrith = registerItem("quebrith", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item quicksilver_solution = registerItem("quicksilver_solution", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item ranogrin = registerItem("ranogrin", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item ranogrin = registerItem("ranogrin", new AliasedCommonModBlockItem(ModBlocks.ranogrin_crop, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item rebis = registerItem("rebis", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item redanian_herbal = registerItem("redanian_herbal", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item resin = registerItem("resin", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));

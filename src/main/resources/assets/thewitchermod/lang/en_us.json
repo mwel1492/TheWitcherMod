@@ -389,13 +389,17 @@
   "item.thewitchermod.water":"Water",
   "item.thewitchermod.white_wolf":"White Wolf",
 
-  "block.thewitchermod.crows_eye_bush": "Crows eye bush",
-  "block.thewitchermod.celandine_bush": "Celandine bush",
-  "block.thewitchermod.fools_parsley_bush": "Fools parsley bush",
-  "block.thewitchermod.hop_umbels_bush": "Hop umbels bush",
-  "block.thewitchermod.han_fiber_bush": "Han fiber bush",
-  "block.thewitchermod.hellebore_petals_bush": "Hellebore petals bush",
-  "block.thewitchermod.nostrix_wall_plant": "Nostrix vines",
+  "block.thewitchermod.crows_eye_bush": "Crows Eye Bush",
+  "block.thewitchermod.celandine_bush": "Celandine Bush",
+  "block.thewitchermod.fools_parsley_bush": "Fools Parsley Bush",
+  "block.thewitchermod.hop_umbels_bush": "Hop Umbels Bush",
+  "block.thewitchermod.han_fiber_bush": "Han Fiber Bush",
+  "block.thewitchermod.hellebore_petals_bush": "Hellebore Petals Bush",
+  "block.thewitchermod.nostrix_wall_plant": "Nostrix Vines",
+  "block.thewitchermod.honeysuckle_bush": "Honeysuckle Bush",
+  "block.thewitchermod.pringrape_bush": "Pringrape Bush",
+  "block.thewitchermod.ranogrin_bush": "Ranogrin Bush",
+
 
   "itemGroup.thewitchermod.general": "The Witcher Mod",
 

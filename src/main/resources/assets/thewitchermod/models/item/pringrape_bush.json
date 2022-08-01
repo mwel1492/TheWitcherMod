@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thewitchermod:block/pringrape_bush_stage4"
+  }
+}

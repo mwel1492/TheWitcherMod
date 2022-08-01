@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "potion",
 	"textures": {
 		"0": "thewitchermod:item/water",
 		"particle": "thewitchermod:item/water"

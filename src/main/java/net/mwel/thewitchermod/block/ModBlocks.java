@@ -26,6 +26,7 @@ public class ModBlocks {
     public static final Block hellebore_petals_bush = registerBlock("hellebore_petals_bush", new HelleborePetalsBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block honeysuckle_bush = registerBlock("honeysuckle_bush", new HoneysuckleBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block pringrape_bush = registerBlock("pringrape_bush", new PringrapeBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
+    public static final Block ranogrin_bush = registerBlock("ranogrin_bush", new RanogrinBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
 
 
     // Crop Blocks
@@ -38,6 +39,7 @@ public class ModBlocks {
     public static final Block hellebore_petals_crop = registerBlockWithoutItem("hellebore_petals_crop", new HelleborePetalsCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block honeysuckle_crop = registerBlockWithoutItem("honeysuckle_crop", new HoneysuckleCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block pringrape_crop = registerBlockWithoutItem("pringrape_crop", new PringrapeCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+    public static final Block ranogrin_crop = registerBlockWithoutItem("ranogrin_crop", new RanogrinCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
 
 //    Other

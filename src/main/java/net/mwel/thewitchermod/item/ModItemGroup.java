@@ -408,14 +408,17 @@ public class ModItemGroup{
 
 
 //              Регистрация блока в Закладке мода
-                stacks.add(new ItemStack(ModBlocks.crows_eye_bush));
                 stacks.add(new ItemStack(ModBlocks.celandine_bush));
+                stacks.add(new ItemStack(ModBlocks.crows_eye_bush));
                 stacks.add(new ItemStack(ModBlocks.fools_parsley_bush));
-                stacks.add(new ItemStack(ModBlocks.hop_umbels_bush));
                 stacks.add(new ItemStack(ModBlocks.han_fiber_bush));
                 stacks.add(new ItemStack(ModBlocks.hellebore_petals_bush));
-
+                stacks.add(new ItemStack(ModBlocks.honeysuckle_bush));
+                stacks.add(new ItemStack(ModBlocks.hop_umbels_bush));
                 stacks.add(new ItemStack(ModBlocks.nostrix_wall_plant));
+                stacks.add(new ItemStack(ModBlocks.pringrape_bush));
+                stacks.add(new ItemStack(ModBlocks.ranogrin_bush));
+
 
 
 //                stacks.add(new ItemStack(ModItems.mutagen_blue));

@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "potion",
 	"textures": {
 		"0": "thewitchermod:item/sansretour_chardonnay",
 		"particle": "thewitchermod:item/sansretour_chardonnay"
