@@ -49,6 +49,7 @@ public class ModBlocks {
     public static final Block cortinarius_mushroom = registerBlockWithoutItem("cortinarius_mushroom", new CortinariusMushroomPlant(AbstractBlock.Settings.of(Material.PLANT, MapColor.BROWN).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS)));
     public static final Block nostrix_wall_plant = registerBlock("nostrix_wall_plant", new NostrixWallPlant(FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().nonOpaque().strength(0.2f)), ModItemGroup.THE_WITCHER);
     public static final Block green_mold_wall_plant = registerBlockWithoutItem("green_mold_wall_plant", new GreenMoldWallPlant(FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().nonOpaque().strength(0.2f)));
+    public static final Block bloodmoss_wall_plant = registerBlockWithoutItem("bloodmoss_wall_plant", new BloodmossWallPlant(FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().nonOpaque().strength(0.2f)));
 
 
 

@@ -42,7 +42,7 @@ public class ModItems{
     public static final Item bison_grass = registerItem("bison_grass", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item black_pearl = registerItem("black_pearl", new MagicItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item black_pearl_dust = registerItem("black_pearl_dust", new MasterItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
-    public static final Item bloodmoss = registerItem("bloodmoss", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
+    public static final Item bloodmoss = registerItem("bloodmoss", new AliasedCommonModBlockItem(ModBlocks.bloodmoss_wall_plant, new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item blowball = registerItem("blowball", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item blue_lotus_flower = registerItem("blue_lotus_flower", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));
     public static final Item bryonia = registerItem("bryonia", new CommonItem(new FabricItemSettings().group(ModItemGroup.THE_WITCHER)));

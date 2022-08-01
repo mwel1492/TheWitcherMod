@@ -49,7 +49,7 @@ public class RanogrinCropBlock extends CropBlock {
         }
         if (i > 2) {
             int j = world.random.nextBetween(1,3);
-            CelandineBushBlock.dropStack(world, pos, new ItemStack(ModItems.pringrape, j + (bl ? 1 : 0)));
+            CelandineBushBlock.dropStack(world, pos, new ItemStack(ModItems.ranogrin, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.ITEM_CROP_PLANT, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
             BlockState blockState = state.with(AGE, 0);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
@@ -62,7 +62,7 @@ public class RanogrinCropBlock extends CropBlock {
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItems.pringrape;
+        return ModItems.ranogrin;
     }
 
     @Override
