@@ -27,6 +27,7 @@ public class ModBlocks {
     public static final Block honeysuckle_bush = registerBlock("honeysuckle_bush", new HoneysuckleBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block pringrape_bush = registerBlock("pringrape_bush", new PringrapeBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
     public static final Block ranogrin_bush = registerBlock("ranogrin_bush", new RanogrinBushBlock(FabricBlockSettings.of(Material.PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
+    public static final Block buckthorn_bush = registerBlock("buckthorn_bush", new BuckthornBushBlock(FabricBlockSettings.of(Material.UNDERWATER_PLANT).ticksRandomly().nonOpaque().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ModItemGroup.THE_WITCHER);
 
 
     // Crop Blocks

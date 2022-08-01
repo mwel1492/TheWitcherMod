@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "cross": "thewitchermod:block/celandine_bush_stage3"
+  }
+}
